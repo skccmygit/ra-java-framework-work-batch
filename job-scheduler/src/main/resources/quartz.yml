@@ -1,0 +1,74 @@
+spring:
+  profiles:
+    group:
+      local: common-env, local-env
+      dev: common-env, dev-env
+      stg: common-env, stg-env
+      prd: common-env, prd-env
+    active: local
+---
+spring:
+  config:
+    activate:
+      on-profile: common-env
+
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: QuartzScheduler
+            instanceId: AUTO
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 10
+            threadPriority: 5
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+            tablePrefix: quartz.QRTZ_
+            useProperties: false
+            isClustered: true
+            misfireThreshold: 60000
+            clusterCheckinInterval: 20000
+            dataSource: schedulerDataSource
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local-env
+
+  quartz:
+    properties:
+      org:
+        quartz:
+          dataSource:
+            schedulerDataSource:
+              user: com_dev
+              password: qwer1234!
+              driver: com.mysql.cj.jdbc.Driver
+              URL: jdbc:mysql://localhost:3307?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Seoul&allowMultiQueries=true&zeroDateTimeBehavior=CONVERT_TO_NULL
+              maxConnections: 5
+              validationQuery: select 1
+              provider: hikaricp
+---
+spring:
+  config:
+    activate:
+      on-profile: dev-env
+
+---
+spring:
+  config:
+    activate:
+      on-profile: stg-env
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prd-env

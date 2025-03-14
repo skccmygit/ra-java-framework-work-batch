@@ -1,0 +1,1364 @@
+2025-03-12 16:47:02,175 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : Starting ComBatchApp using Java 21.0.5 with PID 16160 (D:\kms\work-batch\com-batch\build\classes\java\main started by HaVX5 in D:\kms\work-batch\com-batch)
+2025-03-12 16:47:02,180 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : The following 3 profiles are active: "local", "common-env", "local-env"
+2025-03-12 16:47:03,346 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:47:03,346 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-12 16:47:03,598 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.RoleBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:47:03,598 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:47:03,618 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.WhiteListBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:47:03,664 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 307 ms. Found 20 JPA repository interfaces.
+2025-03-12 16:47:03,682 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:47:03,682 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-12 16:47:03,687 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-03-12 16:47:04,447 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:47:04,447 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-12 16:47:04,483 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AccountStsChngRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AgentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.ApiMonitorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.BookmarkMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.BssmacdRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.DeptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MenuStatisticsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MyViewDtlRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MyViewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,490 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.ShortcutMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserBasicRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserMenuHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleDeptMappingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleDeptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserScrenBttnHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,495 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserScrenBttnRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:47:04,505 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 Redis repository interfaces.
+2025-03-12 16:47:04,700 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'accountRepository' and 'kr.co.skcc.oss.bap.com.repository.AccountRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,700 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'accountStsChngRepository' and 'kr.co.skcc.oss.bap.com.repository.AccountStsChngRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,700 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'agentRepository' and 'kr.co.skcc.oss.bap.com.repository.AgentRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'apiMonitorRepository' and 'kr.co.skcc.oss.bap.com.repository.ApiMonitorRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'bookmarkMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.BookmarkMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'bssmacdRepository' and 'kr.co.skcc.oss.bap.com.repository.BssmacdRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'deptRepository' and 'kr.co.skcc.oss.bap.com.repository.DeptRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'menuStatisticsRepository' and 'kr.co.skcc.oss.bap.com.repository.MenuStatisticsRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'myViewDtlRepository' and 'kr.co.skcc.oss.bap.com.repository.MyViewDtlRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'myViewRepository' and 'kr.co.skcc.oss.bap.com.repository.MyViewRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'roleBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.RoleBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'shortcutMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.ShortcutMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.UserBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userBasicRepository' and 'kr.co.skcc.oss.bap.com.repository.UserBasicRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMenuHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserMenuHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.UserMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleDeptMappingRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleDeptMappingRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleDeptRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleDeptRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userScrenBttnHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserScrenBttnHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userScrenBttnRepository' and 'kr.co.skcc.oss.bap.com.repository.UserScrenBttnRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,705 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'whiteListBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.WhiteListBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:47:04,975 INFO  org.springframework.cloud.context.scope.GenericScope : BeanFactory id=290b22c8-3a7f-3af2-b06b-cca5fba9b1ef
+2025-03-12 16:47:05,435 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [kr.co.skcc.oss.bap.com.config.DatabaseConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:05,455 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:05,465 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:05,470 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x000001b80a50e558] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:05,475 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:05,495 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:05,515 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:05,605 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: batch]
+2025-03-12 16:47:05,675 INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-03-12 16:47:05,724 INFO  org.hibernate.cache.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-03-12 16:47:06,319 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-12 16:47:06,349 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2025-03-12 16:47:07,651 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:277)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:805)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at kr.co.skcc.oss.bap.com.ComBatchApp.main(ComBatchApp.java:26)
+2025-03-12 16:47:07,700 WARN  org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-12 16:47:07,702 WARN  org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-12 16:47:10,259 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-12 16:47:10,269 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'batch'
+2025-03-12 16:47:10,275 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:10,298 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [jdk.proxy2.$Proxy168] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:10,353 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'transactionManager' of type [org.springframework.orm.jpa.JpaTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:10,382 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:47:10,405 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-12 16:47:10,960 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 9091 (http)
+2025-03-12 16:47:10,985 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-03-12 16:47:10,990 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-03-12 16:47:11,055 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-03-12 16:47:11,055 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8816 ms
+2025-03-12 16:47:11,495 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: quartz]
+2025-03-12 16:47:11,500 INFO  org.hibernate.cache.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-03-12 16:47:11,520 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-12 16:47:11,525 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting...
+2025-03-12 16:47:12,535 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at kr.co.skcc.oss.bap.com.ComBatchApp.main(ComBatchApp.java:26)
+2025-03-12 16:47:12,535 WARN  org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-12 16:47:12,535 WARN  org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-12 16:47:12,627 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-12 16:47:12,627 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'quartz'
+2025-03-12 16:47:12,812 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2025-03-12 16:47:13,817 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobController': Unsatisfied dependency expressed through field 'asyncJobLauncher': Error creating bean with name 'asyncJobLauncher' defined in kr.co.skcc.oss.bap.com.ComBatchApp: Unsatisfied dependency expressed through method 'asyncJobLauncher' parameter 0: Error creating bean with name 'jobRepository' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$SpringBootBatchConfiguration.class]: Failed to instantiate [org.springframework.batch.core.repository.JobRepository]: Factory method 'jobRepository' threw exception with message: Unable to configure the default job repository
+2025-03-12 16:47:13,817 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'quartz'
+2025-03-12 16:47:13,822 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'batch'
+2025-03-12 16:47:13,827 INFO  org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2025-03-12 16:47:13,852 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-12 16:47:13,877 ERROR org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobController': Unsatisfied dependency expressed through field 'asyncJobLauncher': Error creating bean with name 'asyncJobLauncher' defined in kr.co.skcc.oss.bap.com.ComBatchApp: Unsatisfied dependency expressed through method 'asyncJobLauncher' parameter 0: Error creating bean with name 'jobRepository' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$SpringBootBatchConfiguration.class]: Failed to instantiate [org.springframework.batch.core.repository.JobRepository]: Factory method 'jobRepository' threw exception with message: Unable to configure the default job repository
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at kr.co.skcc.oss.bap.com.ComBatchApp.main(ComBatchApp.java:26)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'asyncJobLauncher' defined in kr.co.skcc.oss.bap.com.ComBatchApp: Unsatisfied dependency expressed through method 'asyncJobLauncher' parameter 0: Error creating bean with name 'jobRepository' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$SpringBootBatchConfiguration.class]: Failed to instantiate [org.springframework.batch.core.repository.JobRepository]: Factory method 'jobRepository' threw exception with message: Unable to configure the default job repository
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobRepository' defined in class path resource [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$SpringBootBatchConfiguration.class]: Failed to instantiate [org.springframework.batch.core.repository.JobRepository]: Factory method 'jobRepository' threw exception with message: Unable to configure the default job repository
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.batch.core.repository.JobRepository]: Factory method 'jobRepository' threw exception with message: Unable to configure the default job repository
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 47 common frames omitted
+Caused by: org.springframework.batch.core.configuration.BatchConfigurationException: Unable to configure the default job repository
+	at org.springframework.batch.core.configuration.support.DefaultBatchConfiguration.jobRepository(DefaultBatchConfiguration.java:151)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 48 common frames omitted
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:357)
+	at org.springframework.batch.support.DatabaseType.fromMetaData(DatabaseType.java:86)
+	at org.springframework.batch.core.configuration.support.DefaultBatchConfiguration.getDatabaseType(DefaultBatchConfiguration.java:396)
+	at org.springframework.batch.core.configuration.support.DefaultBatchConfiguration.jobRepository(DefaultBatchConfiguration.java:134)
+	... 51 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:331)
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 55 common frames omitted
+2025-03-12 16:52:08,694 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : Starting ComBatchApp using Java 21.0.5 with PID 19556 (D:\kms\work-batch\com-batch\build\classes\java\main started by HaVX5 in D:\kms\work-batch\com-batch)
+2025-03-12 16:52:08,694 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : The following 3 profiles are active: "local", "common-env", "local-env"
+2025-03-12 16:52:09,791 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:52:09,796 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-12 16:52:10,011 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.RoleBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:52:10,016 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:52:10,036 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.WhiteListBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:52:10,076 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 270 ms. Found 20 JPA repository interfaces.
+2025-03-12 16:52:10,086 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:52:10,086 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-12 16:52:10,096 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-03-12 16:52:10,860 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:52:10,862 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-12 16:52:10,905 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,905 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AccountStsChngRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,905 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AgentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,905 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.ApiMonitorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,910 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.BookmarkMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,910 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.BssmacdRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,910 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.DeptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,910 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MenuStatisticsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,910 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MyViewDtlRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,910 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MyViewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,915 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.ShortcutMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,915 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserBasicRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,915 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserMenuHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,920 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,920 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleDeptMappingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,920 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleDeptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,920 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,920 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,920 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserScrenBttnHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,925 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserScrenBttnRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:52:10,930 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 Redis repository interfaces.
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'accountRepository' and 'kr.co.skcc.oss.bap.com.repository.AccountRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'accountStsChngRepository' and 'kr.co.skcc.oss.bap.com.repository.AccountStsChngRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'agentRepository' and 'kr.co.skcc.oss.bap.com.repository.AgentRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'apiMonitorRepository' and 'kr.co.skcc.oss.bap.com.repository.ApiMonitorRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'bookmarkMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.BookmarkMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'bssmacdRepository' and 'kr.co.skcc.oss.bap.com.repository.BssmacdRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'deptRepository' and 'kr.co.skcc.oss.bap.com.repository.DeptRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'menuStatisticsRepository' and 'kr.co.skcc.oss.bap.com.repository.MenuStatisticsRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'myViewDtlRepository' and 'kr.co.skcc.oss.bap.com.repository.MyViewDtlRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'myViewRepository' and 'kr.co.skcc.oss.bap.com.repository.MyViewRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'roleBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.RoleBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'shortcutMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.ShortcutMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,158 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.UserBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userBasicRepository' and 'kr.co.skcc.oss.bap.com.repository.UserBasicRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMenuHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserMenuHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.UserMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleDeptMappingRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleDeptMappingRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleDeptRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleDeptRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userScrenBttnHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserScrenBttnHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userScrenBttnRepository' and 'kr.co.skcc.oss.bap.com.repository.UserScrenBttnRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,163 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'whiteListBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.WhiteListBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:52:11,420 INFO  org.springframework.cloud.context.scope.GenericScope : BeanFactory id=290b22c8-3a7f-3af2-b06b-cca5fba9b1ef
+2025-03-12 16:52:11,899 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [kr.co.skcc.oss.bap.com.config.DatabaseConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:11,924 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:11,934 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:11,939 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x000002ab815114d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:11,944 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:11,964 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:11,979 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:12,064 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: batch]
+2025-03-12 16:52:12,144 INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-03-12 16:52:12,194 INFO  org.hibernate.cache.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-03-12 16:52:12,822 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-12 16:52:12,858 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2025-03-12 16:52:13,126 INFO  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6da86e98
+2025-03-12 16:52:13,130 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2025-03-12 16:52:13,214 WARN  org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-12 16:52:13,219 WARN  org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-12 16:52:15,605 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-12 16:52:15,610 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'batch'
+2025-03-12 16:52:15,615 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:15,630 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [jdk.proxy2.$Proxy169] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:15,655 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'transactionManager' of type [org.springframework.orm.jpa.JpaTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:15,685 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:52:15,702 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-12 16:52:16,223 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 9091 (http)
+2025-03-12 16:52:16,238 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-03-12 16:52:16,238 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-03-12 16:52:16,313 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-03-12 16:52:16,313 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7568 ms
+2025-03-12 16:52:16,733 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: quartz]
+2025-03-12 16:52:16,738 INFO  org.hibernate.cache.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-03-12 16:52:16,753 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-12 16:52:16,758 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting...
+2025-03-12 16:52:16,784 INFO  com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38da693b
+2025-03-12 16:52:16,784 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Start completed.
+2025-03-12 16:52:16,784 WARN  org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-12 16:52:16,784 WARN  org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-12 16:52:16,855 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-12 16:52:16,855 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'quartz'
+2025-03-12 16:52:17,486 INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-12 16:52:19,136 INFO  org.quartz.impl.StdSchedulerFactory : Using ConnectionProvider class 'org.quartz.utils.HikariCpPoolingConnectionProvider' for data source 'schedulerDataSource'
+2025-03-12 16:52:19,146 INFO  org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2025-03-12 16:52:19,166 INFO  org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-03-12 16:52:19,166 INFO  org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.2 created.
+2025-03-12 16:52:19,166 INFO  org.quartz.impl.jdbcjobstore.JobStoreTX : Using db table-based data access locking (synchronization).
+2025-03-12 16:52:19,166 INFO  org.quartz.impl.jdbcjobstore.JobStoreTX : JobStoreTX initialized.
+2025-03-12 16:52:19,166 INFO  org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'com-batch' with instanceId 'CVP00231464A1741773139151'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2025-03-12 16:52:19,171 INFO  org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'com-batch' initialized from an externally provided properties instance.
+2025-03-12 16:52:19,171 INFO  org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.2
+2025-03-12 16:52:19,171 INFO  org.quartz.core.QuartzScheduler : JobFactory set to: kr.co.skcc.oss.bap.scheduler.config.AutoWiringSpringBeanJobFactory@1b4bfdb
+2025-03-12 16:52:25,209 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-12 16:52:25,412 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 9091 (http) with context path '/'
+2025-03-12 16:52:25,462 INFO  org.apache.kafka.clients.consumer.ConsumerConfig : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-onm-g-log-api-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 2000
+	fetch.min.bytes = 15360
+	group.id = onm-g-log-api
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-12 16:52:25,532 INFO  org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector : initializing Kafka metrics collector
+2025-03-12 16:52:25,727 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka version: 3.7.0
+2025-03-12 16:52:25,727 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka commitId: 2ae524ed625438c5
+2025-03-12 16:52:25,727 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka startTimeMs: 1741773145727
+2025-03-12 16:52:25,732 INFO  org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Subscribed to topic(s): ONM-T-LOG-API
+2025-03-12 16:52:25,742 INFO  org.apache.kafka.clients.consumer.ConsumerConfig : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-onm-g-log-api-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 2000
+	fetch.min.bytes = 15360
+	group.id = onm-g-log-api
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-12 16:52:25,742 INFO  org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector : initializing Kafka metrics collector
+2025-03-12 16:52:25,757 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka version: 3.7.0
+2025-03-12 16:52:25,757 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka commitId: 2ae524ed625438c5
+2025-03-12 16:52:25,757 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka startTimeMs: 1741773145757
+2025-03-12 16:52:25,757 INFO  org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Subscribed to topic(s): ONM-T-LOG-API
+2025-03-12 16:52:25,757 INFO  org.apache.kafka.clients.consumer.ConsumerConfig : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-onm-g-log-api-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 2000
+	fetch.min.bytes = 15360
+	group.id = onm-g-log-api
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-12 16:52:25,757 INFO  org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector : initializing Kafka metrics collector
+2025-03-12 16:52:25,767 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka version: 3.7.0
+2025-03-12 16:52:25,767 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka commitId: 2ae524ed625438c5
+2025-03-12 16:52:25,767 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka startTimeMs: 1741773145767
+2025-03-12 16:52:25,767 INFO  org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Subscribed to topic(s): ONM-T-LOG-API
+2025-03-12 16:52:25,772 INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now
+2025-03-12 16:52:25,772 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:52:26,258 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Error while fetching metadata with correlation id 2 : {ONM-T-LOG-API=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-12 16:52:26,258 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Error while fetching metadata with correlation id 2 : {ONM-T-LOG-API=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-12 16:52:26,261 INFO  org.apache.kafka.clients.Metadata : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Cluster ID: GEc_johfSTW1KO7aLrTnFA
+2025-03-12 16:52:26,261 INFO  org.apache.kafka.clients.Metadata : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Cluster ID: GEc_johfSTW1KO7aLrTnFA
+2025-03-12 16:52:26,345 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Error while fetching metadata with correlation id 2 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:26,345 INFO  org.apache.kafka.clients.Metadata : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Cluster ID: GEc_johfSTW1KO7aLrTnFA
+2025-03-12 16:52:26,387 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Error while fetching metadata with correlation id 5 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:26,470 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Error while fetching metadata with correlation id 5 : {ONM-T-LOG-API=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-12 16:52:26,477 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Error while fetching metadata with correlation id 5 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:26,605 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Error while fetching metadata with correlation id 7 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:26,654 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Error while fetching metadata with correlation id 7 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:26,666 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Error while fetching metadata with correlation id 7 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:26,823 ERROR org.quartz.impl.jdbcjobstore.JobStoreTX : ClusterManager: Error managing cluster: Failed to obtain DB connection from data source 'schedulerDataSource': java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'schedulerDataSource': java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:783)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:71)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.initialize(JobStoreSupport.java:3920)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:692)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:539)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:142)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:730)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.start(SchedulerFactoryBean.java:799)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:288)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:471)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:260)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:981)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at kr.co.skcc.oss.bap.com.ComBatchApp.main(ComBatchApp.java:26)
+Caused by: java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.quartz.utils.HikariCpPoolingConnectionProvider.getConnection(HikariCpPoolingConnectionProvider.java:180)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:108)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:780)
+	... 23 common frames omitted
+2025-03-12 16:52:26,832 INFO  org.quartz.core.QuartzScheduler : Scheduler com-batch_$_CVP00231464A1741773139151 started.
+2025-03-12 16:52:26,832 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:52:26,856 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : Started ComBatchApp in 18.962 seconds (process running for 19.574)
+2025-03-12 16:52:27,036 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Error while fetching metadata with correlation id 9 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:27,051 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Error while fetching metadata with correlation id 9 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:27,089 WARN  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Error while fetching metadata with correlation id 9 : {ONM-T-LOG-API=LEADER_NOT_AVAILABLE}
+2025-03-12 16:52:27,760 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-03-12 16:52:27,764 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:52:27,808 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Request joining group due to: need to re-join with the given member-id: consumer-onm-g-log-api-1-6e3cacae-b66e-4b9e-8128-d50e9a54898b
+2025-03-12 16:52:27,809 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:52:27,835 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Successfully joined group with generation Generation{generationId=1, memberId='consumer-onm-g-log-api-1-6e3cacae-b66e-4b9e-8128-d50e9a54898b', protocol='range'}
+2025-03-12 16:52:27,839 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:52:27,839 ERROR org.quartz.impl.jdbcjobstore.JobStoreTX : MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'schedulerDataSource': java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'schedulerDataSource': java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:783)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:71)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3246)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:4012)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4033)
+Caused by: java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.quartz.utils.HikariCpPoolingConnectionProvider.getConnection(HikariCpPoolingConnectionProvider.java:180)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:108)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:780)
+	... 4 common frames omitted
+2025-03-12 16:52:27,842 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Finished assignment for group at generation 1: {consumer-onm-g-log-api-1-6e3cacae-b66e-4b9e-8128-d50e9a54898b=Assignment(partitions=[ONM-T-LOG-API-0])}
+2025-03-12 16:52:27,897 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-03-12 16:52:27,899 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:52:27,946 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Successfully synced group in generation Generation{generationId=1, memberId='consumer-onm-g-log-api-1-6e3cacae-b66e-4b9e-8128-d50e9a54898b', protocol='range'}
+2025-03-12 16:52:27,947 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Notifying assignor about the new Assignment(partitions=[ONM-T-LOG-API-0])
+2025-03-12 16:52:27,950 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Adding newly assigned partitions: ONM-T-LOG-API-0
+2025-03-12 16:52:27,952 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Request joining group due to: need to re-join with the given member-id: consumer-onm-g-log-api-3-04e53e3e-edc1-4c79-8808-97450a44afe2
+2025-03-12 16:52:27,953 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:52:27,996 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-03-12 16:52:27,996 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Found no committed offset for partition ONM-T-LOG-API-0
+2025-03-12 16:52:27,998 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:52:28,018 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Found no committed offset for partition ONM-T-LOG-API-0
+2025-03-12 16:52:28,022 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Request joining group due to: need to re-join with the given member-id: consumer-onm-g-log-api-2-87f6753e-78b6-4976-81e8-eefa8449b709
+2025-03-12 16:52:28,022 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:52:28,039 INFO  org.apache.kafka.clients.consumer.internals.SubscriptionState : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Resetting offset for partition ONM-T-LOG-API-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2025-03-12 16:52:28,067 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions assigned: [ONM-T-LOG-API-0]
+2025-03-12 16:52:28,842 ERROR org.quartz.core.ErrorLogger : An error occurred while scanning for the next triggers to fire.
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'schedulerDataSource': java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:783)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:71)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3861)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+Caused by: java.sql.SQLException: Access denied for user 'com_dev'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.quartz.utils.HikariCpPoolingConnectionProvider.getConnection(HikariCpPoolingConnectionProvider.java:180)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:108)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:780)
+	... 4 common frames omitted
+2025-03-12 16:52:28,843 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:52:30,846 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Request joining group due to: group is already rebalancing
+2025-03-12 16:52:30,847 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Revoke previously assigned partitions ONM-T-LOG-API-0
+2025-03-12 16:52:30,848 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions revoked: [ONM-T-LOG-API-0]
+2025-03-12 16:52:30,849 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:52:30,858 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Successfully joined group with generation Generation{generationId=2, memberId='consumer-onm-g-log-api-1-6e3cacae-b66e-4b9e-8128-d50e9a54898b', protocol='range'}
+2025-03-12 16:52:30,859 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Finished assignment for group at generation 2: {consumer-onm-g-log-api-1-6e3cacae-b66e-4b9e-8128-d50e9a54898b=Assignment(partitions=[ONM-T-LOG-API-0]), consumer-onm-g-log-api-3-04e53e3e-edc1-4c79-8808-97450a44afe2=Assignment(partitions=[]), consumer-onm-g-log-api-2-87f6753e-78b6-4976-81e8-eefa8449b709=Assignment(partitions=[])}
+2025-03-12 16:52:30,861 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Successfully joined group with generation Generation{generationId=2, memberId='consumer-onm-g-log-api-3-04e53e3e-edc1-4c79-8808-97450a44afe2', protocol='range'}
+2025-03-12 16:52:30,864 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Successfully joined group with generation Generation{generationId=2, memberId='consumer-onm-g-log-api-2-87f6753e-78b6-4976-81e8-eefa8449b709', protocol='range'}
+2025-03-12 16:52:30,870 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Successfully synced group in generation Generation{generationId=2, memberId='consumer-onm-g-log-api-1-6e3cacae-b66e-4b9e-8128-d50e9a54898b', protocol='range'}
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Successfully synced group in generation Generation{generationId=2, memberId='consumer-onm-g-log-api-3-04e53e3e-edc1-4c79-8808-97450a44afe2', protocol='range'}
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Notifying assignor about the new Assignment(partitions=[ONM-T-LOG-API-0])
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Adding newly assigned partitions: ONM-T-LOG-API-0
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Notifying assignor about the new Assignment(partitions=[])
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Adding newly assigned partitions: 
+2025-03-12 16:52:30,872 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions assigned: []
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Successfully synced group in generation Generation{generationId=2, memberId='consumer-onm-g-log-api-2-87f6753e-78b6-4976-81e8-eefa8449b709', protocol='range'}
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Notifying assignor about the new Assignment(partitions=[])
+2025-03-12 16:52:30,872 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Adding newly assigned partitions: 
+2025-03-12 16:52:30,872 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions assigned: []
+2025-03-12 16:52:30,887 INFO  org.apache.kafka.clients.consumer.internals.ConsumerUtils : Setting offset for partition ONM-T-LOG-API-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-03-12 16:52:30,888 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions assigned: [ONM-T-LOG-API-0]
+2025-03-12 16:52:41,834 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:52:44,852 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:52:57,843 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:53:00,864 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:56:44,409 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : Starting ComBatchApp using Java 21.0.5 with PID 3972 (D:\kms\work-batch\com-batch\build\classes\java\main started by HaVX5 in D:\kms\work-batch\com-batch)
+2025-03-12 16:56:44,414 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : The following 3 profiles are active: "local", "common-env", "local-env"
+2025-03-12 16:56:45,492 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:56:45,492 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-12 16:56:45,723 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.RoleBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:56:45,729 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:56:45,759 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.WhiteListBasedApiRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-03-12 16:56:45,799 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 297 ms. Found 20 JPA repository interfaces.
+2025-03-12 16:56:45,814 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:56:45,814 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-12 16:56:45,819 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-03-12 16:56:46,672 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-12 16:56:46,675 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-12 16:56:46,716 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,716 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AccountStsChngRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,716 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.AgentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.ApiMonitorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.BookmarkMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.BssmacdRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.DeptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MenuStatisticsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MyViewDtlRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.MyViewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.ShortcutMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserBasicRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserMenuHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,720 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserMenuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,725 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleDeptMappingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,725 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleDeptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,725 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,725 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserRoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,725 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserScrenBttnHistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,725 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface kr.co.skcc.oss.bap.com.repository.UserScrenBttnRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-12 16:56:46,735 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 3 Redis repository interfaces.
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'accountRepository' and 'kr.co.skcc.oss.bap.com.repository.AccountRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'accountStsChngRepository' and 'kr.co.skcc.oss.bap.com.repository.AccountStsChngRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'agentRepository' and 'kr.co.skcc.oss.bap.com.repository.AgentRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'apiMonitorRepository' and 'kr.co.skcc.oss.bap.com.repository.ApiMonitorRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'bookmarkMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.BookmarkMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'bssmacdRepository' and 'kr.co.skcc.oss.bap.com.repository.BssmacdRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'deptRepository' and 'kr.co.skcc.oss.bap.com.repository.DeptRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'menuStatisticsRepository' and 'kr.co.skcc.oss.bap.com.repository.MenuStatisticsRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'myViewDtlRepository' and 'kr.co.skcc.oss.bap.com.repository.MyViewDtlRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,934 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'myViewRepository' and 'kr.co.skcc.oss.bap.com.repository.MyViewRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'roleBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.RoleBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'shortcutMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.ShortcutMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.UserBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userBasicRepository' and 'kr.co.skcc.oss.bap.com.repository.UserBasicRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMenuHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserMenuHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMenuRepository' and 'kr.co.skcc.oss.bap.com.repository.UserMenuRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleDeptMappingRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleDeptMappingRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleDeptRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleDeptRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userRoleRepository' and 'kr.co.skcc.oss.bap.com.repository.UserRoleRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userScrenBttnHistRepository' and 'kr.co.skcc.oss.bap.com.repository.UserScrenBttnHistRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userScrenBttnRepository' and 'kr.co.skcc.oss.bap.com.repository.UserScrenBttnRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:46,939 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'whiteListBasedApiRepository' and 'kr.co.skcc.oss.bap.com.repository.WhiteListBasedApiRepository' mapperInterface. Bean already defined with the same name!
+2025-03-12 16:56:47,229 INFO  org.springframework.cloud.context.scope.GenericScope : BeanFactory id=290b22c8-3a7f-3af2-b06b-cca5fba9b1ef
+2025-03-12 16:56:47,792 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [kr.co.skcc.oss.bap.com.config.DatabaseConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:47,822 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:47,837 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:47,847 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x00000205135114d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:47,861 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:47,886 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:47,915 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:48,050 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: batch]
+2025-03-12 16:56:48,151 INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-03-12 16:56:48,255 INFO  org.hibernate.cache.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-03-12 16:56:49,015 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-12 16:56:49,072 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2025-03-12 16:56:49,353 INFO  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47b71556
+2025-03-12 16:56:49,353 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2025-03-12 16:56:49,421 WARN  org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-12 16:56:49,421 WARN  org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-12 16:56:52,047 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-12 16:56:52,052 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'batch'
+2025-03-12 16:56:52,057 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:52,077 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'entityManagerFactory' of type [jdk.proxy2.$Proxy169] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:52,102 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'transactionManager' of type [org.springframework.orm.jpa.JpaTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:52,142 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.batch-org.springframework.boot.autoconfigure.batch.BatchProperties' of type [org.springframework.boot.autoconfigure.batch.BatchProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-03-12 16:56:52,152 WARN  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration' of type [org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [jobRegistryBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-12 16:56:52,656 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 9091 (http)
+2025-03-12 16:56:52,676 INFO  org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-03-12 16:56:52,676 INFO  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-03-12 16:56:52,741 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-03-12 16:56:52,741 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8267 ms
+2025-03-12 16:56:53,141 INFO  org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: quartz]
+2025-03-12 16:56:53,146 INFO  org.hibernate.cache.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-03-12 16:56:53,166 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-12 16:56:53,166 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting...
+2025-03-12 16:56:53,190 INFO  com.zaxxer.hikari.pool.HikariPool : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@430344bf
+2025-03-12 16:56:53,190 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Start completed.
+2025-03-12 16:56:53,190 WARN  org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-12 16:56:53,190 WARN  org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-12 16:56:53,275 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-12 16:56:53,275 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'quartz'
+2025-03-12 16:56:53,890 INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-12 16:56:55,600 INFO  org.quartz.impl.StdSchedulerFactory : Using ConnectionProvider class 'org.quartz.utils.HikariCpPoolingConnectionProvider' for data source 'schedulerDataSource'
+2025-03-12 16:56:55,605 INFO  org.quartz.impl.StdSchedulerFactory : Using default implementation for ThreadExecutor
+2025-03-12 16:56:55,625 INFO  org.quartz.core.SchedulerSignalerImpl : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-03-12 16:56:55,625 INFO  org.quartz.core.QuartzScheduler : Quartz Scheduler v.2.3.2 created.
+2025-03-12 16:56:55,625 INFO  org.quartz.impl.jdbcjobstore.JobStoreTX : Using db table-based data access locking (synchronization).
+2025-03-12 16:56:55,630 INFO  org.quartz.impl.jdbcjobstore.JobStoreTX : JobStoreTX initialized.
+2025-03-12 16:56:55,630 INFO  org.quartz.core.QuartzScheduler : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'com-batch' with instanceId 'CVP00231464A1741773415615'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2025-03-12 16:56:55,630 INFO  org.quartz.impl.StdSchedulerFactory : Quartz scheduler 'com-batch' initialized from an externally provided properties instance.
+2025-03-12 16:56:55,630 INFO  org.quartz.impl.StdSchedulerFactory : Quartz scheduler version: 2.3.2
+2025-03-12 16:56:55,630 INFO  org.quartz.core.QuartzScheduler : JobFactory set to: kr.co.skcc.oss.bap.scheduler.config.AutoWiringSpringBeanJobFactory@25354173
+2025-03-12 16:57:01,923 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-12 16:57:02,117 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 9091 (http) with context path '/'
+2025-03-12 16:57:02,172 INFO  org.apache.kafka.clients.consumer.ConsumerConfig : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-onm-g-log-api-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 2000
+	fetch.min.bytes = 15360
+	group.id = onm-g-log-api
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-12 16:57:02,232 INFO  org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector : initializing Kafka metrics collector
+2025-03-12 16:57:02,411 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka version: 3.7.0
+2025-03-12 16:57:02,411 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka commitId: 2ae524ed625438c5
+2025-03-12 16:57:02,411 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka startTimeMs: 1741773422406
+2025-03-12 16:57:02,416 INFO  org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Subscribed to topic(s): ONM-T-LOG-API
+2025-03-12 16:57:02,431 INFO  org.apache.kafka.clients.consumer.ConsumerConfig : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-onm-g-log-api-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 2000
+	fetch.min.bytes = 15360
+	group.id = onm-g-log-api
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-12 16:57:02,431 INFO  org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector : initializing Kafka metrics collector
+2025-03-12 16:57:02,441 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka version: 3.7.0
+2025-03-12 16:57:02,441 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka commitId: 2ae524ed625438c5
+2025-03-12 16:57:02,441 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka startTimeMs: 1741773422441
+2025-03-12 16:57:02,441 INFO  org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Subscribed to topic(s): ONM-T-LOG-API
+2025-03-12 16:57:02,446 INFO  org.apache.kafka.clients.consumer.ConsumerConfig : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-onm-g-log-api-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 2000
+	fetch.min.bytes = 15360
+	group.id = onm-g-log-api
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-12 16:57:02,446 INFO  org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector : initializing Kafka metrics collector
+2025-03-12 16:57:02,451 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka version: 3.7.0
+2025-03-12 16:57:02,451 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka commitId: 2ae524ed625438c5
+2025-03-12 16:57:02,451 INFO  org.apache.kafka.common.utils.AppInfoParser : Kafka startTimeMs: 1741773422451
+2025-03-12 16:57:02,451 INFO  org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Subscribed to topic(s): ONM-T-LOG-API
+2025-03-12 16:57:02,458 INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean : Starting Quartz Scheduler now
+2025-03-12 16:57:02,461 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2025-03-12 16:57:02,526 INFO  com.zaxxer.hikari.pool.HikariPool : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4907d3e5
+2025-03-12 16:57:02,527 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Start completed.
+2025-03-12 16:57:02,656 INFO  org.quartz.core.QuartzScheduler : Scheduler com-batch_$_CVP00231464A1741773415615 started.
+2025-03-12 16:57:02,680 INFO  kr.co.skcc.oss.bap.com.ComBatchApp : Started ComBatchApp in 19.019 seconds (process running for 19.653)
+2025-03-12 16:57:02,983 INFO  org.apache.kafka.clients.Metadata : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Cluster ID: GEc_johfSTW1KO7aLrTnFA
+2025-03-12 16:57:02,984 INFO  org.apache.kafka.clients.Metadata : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Cluster ID: GEc_johfSTW1KO7aLrTnFA
+2025-03-12 16:57:02,984 INFO  org.apache.kafka.clients.Metadata : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Cluster ID: GEc_johfSTW1KO7aLrTnFA
+2025-03-12 16:57:02,985 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-03-12 16:57:02,985 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-03-12 16:57:02,985 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-03-12 16:57:02,989 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:57:02,989 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:57:02,989 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:57:03,017 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Request joining group due to: need to re-join with the given member-id: consumer-onm-g-log-api-2-584afc2d-f6e1-460a-984c-90618b51d615
+2025-03-12 16:57:03,018 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:57:03,024 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Request joining group due to: need to re-join with the given member-id: consumer-onm-g-log-api-1-f20161b6-2a10-47e2-b93c-f986fa4ff1ad
+2025-03-12 16:57:03,025 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:57:03,026 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Request joining group due to: need to re-join with the given member-id: consumer-onm-g-log-api-3-1ac7992c-35a0-4cc6-9656-38a973a9be52
+2025-03-12 16:57:03,027 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] (Re-)joining group
+2025-03-12 16:57:03,036 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Successfully joined group with generation Generation{generationId=4, memberId='consumer-onm-g-log-api-3-1ac7992c-35a0-4cc6-9656-38a973a9be52', protocol='range'}
+2025-03-12 16:57:03,038 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Successfully joined group with generation Generation{generationId=4, memberId='consumer-onm-g-log-api-1-f20161b6-2a10-47e2-b93c-f986fa4ff1ad', protocol='range'}
+2025-03-12 16:57:03,038 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Successfully joined group with generation Generation{generationId=4, memberId='consumer-onm-g-log-api-2-584afc2d-f6e1-460a-984c-90618b51d615', protocol='range'}
+2025-03-12 16:57:03,047 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Finished assignment for group at generation 4: {consumer-onm-g-log-api-3-1ac7992c-35a0-4cc6-9656-38a973a9be52=Assignment(partitions=[]), consumer-onm-g-log-api-1-f20161b6-2a10-47e2-b93c-f986fa4ff1ad=Assignment(partitions=[ONM-T-LOG-API-0]), consumer-onm-g-log-api-2-584afc2d-f6e1-460a-984c-90618b51d615=Assignment(partitions=[])}
+2025-03-12 16:57:03,065 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Successfully synced group in generation Generation{generationId=4, memberId='consumer-onm-g-log-api-3-1ac7992c-35a0-4cc6-9656-38a973a9be52', protocol='range'}
+2025-03-12 16:57:03,065 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Successfully synced group in generation Generation{generationId=4, memberId='consumer-onm-g-log-api-1-f20161b6-2a10-47e2-b93c-f986fa4ff1ad', protocol='range'}
+2025-03-12 16:57:03,066 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Notifying assignor about the new Assignment(partitions=[ONM-T-LOG-API-0])
+2025-03-12 16:57:03,066 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Notifying assignor about the new Assignment(partitions=[])
+2025-03-12 16:57:03,067 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Adding newly assigned partitions: 
+2025-03-12 16:57:03,068 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions assigned: []
+2025-03-12 16:57:03,068 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Successfully synced group in generation Generation{generationId=4, memberId='consumer-onm-g-log-api-2-584afc2d-f6e1-460a-984c-90618b51d615', protocol='range'}
+2025-03-12 16:57:03,068 INFO  org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Notifying assignor about the new Assignment(partitions=[])
+2025-03-12 16:57:03,068 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Adding newly assigned partitions: 
+2025-03-12 16:57:03,069 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions assigned: []
+2025-03-12 16:57:03,069 INFO  org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Adding newly assigned partitions: ONM-T-LOG-API-0
+2025-03-12 16:57:03,082 INFO  org.apache.kafka.clients.consumer.internals.ConsumerUtils : Setting offset for partition ONM-T-LOG-API-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-03-12 16:57:03,083 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer : onm-g-log-api: partitions assigned: [ONM-T-LOG-API-0]
+2025-03-12 17:06:03,039 INFO  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Node -1 disconnected.
+2025-03-12 17:06:03,127 INFO  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Node -1 disconnected.
+2025-03-12 17:06:03,171 INFO  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Node -1 disconnected.
+2025-03-12 17:16:03,067 INFO  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-3, groupId=onm-g-log-api] Node -1 disconnected.
+2025-03-12 17:16:03,093 INFO  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-2, groupId=onm-g-log-api] Node -1 disconnected.
+2025-03-12 17:16:03,306 INFO  org.apache.kafka.clients.NetworkClient : [Consumer clientId=consumer-onm-g-log-api-1, groupId=onm-g-log-api] Node -1 disconnected.

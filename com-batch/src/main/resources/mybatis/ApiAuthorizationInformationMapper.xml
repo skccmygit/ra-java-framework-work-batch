@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.skcc.oss.bap.com.repository.ApiAuthorizationInformationMapper">
+
+    <select id="findWhiteListBasedApiUpdateList" resultType="map">
+        /* 공통, API Gateway, 이기정 */
+
+        SELECT
+            A.API_ID
+            , A.API_NM
+            , A.API_LOC_URLADDR
+            , A.HTT_METHOD_VAL
+        FROM OOM.OOM10210 A
+        WHERE NOT EXISTS (
+            SELECT 'X'
+            FROM OCO.OCO10230 B
+            WHERE B.API_ID = A.API_ID
+        )
+        AND A.USE_YN = 'Y'
+    </select>
+
+    <select id="findRoleBasedApiUpdateList" resultType="map">
+        /* 공통, API Gateway, 이기정 */
+
+        SELECT
+            R.USER_ROLE_ID
+            , R.SCREN_ID
+            , R.BTTN_ID
+            , A.API_ID
+            , A.API_LOC_URLADDR
+            , A.HTT_METHOD_VAL
+        FROM OCO.OCO10121 R
+        INNER JOIN OCO.OCO10230 S ON R.SCREN_ID = S.SCREN_ID AND R.BTTN_ID = S.BTTN_ID
+        INNER JOIN OOM.OOM10210 A ON S.API_ID = A.API_ID
+        WHERE
+            S.USE_YN = 'Y'
+            AND A.USE_YN = 'Y'
+    </select>
+
+    <select id="findUserBasedApiUpdateList" resultType="map">
+        /* 공통, API Gateway, 이기정 */
+
+        SELECT
+            U.USERID
+            , U.SCREN_ID
+            , U.BTTN_ID
+            , A.API_ID
+            , A.API_LOC_URLADDR
+            , A.HTT_METHOD_VAL
+        FROM OCO.OCO10107 U
+        INNER JOIN OCO.OCO10230 S ON U.SCREN_ID = S.SCREN_ID AND U.BTTN_ID = S.BTTN_ID
+        INNER JOIN OOM.OOM10210 A ON S.API_ID = A.API_ID
+        WHERE
+            S.USE_YN = 'Y'
+            AND A.USE_YN = 'Y'
+    </select>
+
+</mapper>

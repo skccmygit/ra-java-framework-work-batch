@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "50e9b785-abc8-4ca2-a7d5-383f66f70979",
+		"name": "쿼츠스케줄러",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cron Job 등록",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobName\": \"yyyy\",\r\n  \"jobGroup\": 8888,\r\n  \"description\": \"설명-Cron\",\r\n  \"startTime\": \"2021-12-12 15:03:01\",\r\n  \"cronExpression\": \"0 0/5 * 1/1 * ? *\",\r\n  \"jobParameters\": [\r\n    {\r\n      \"jobParamName\": \"COUNT\",\r\n      \"jobParamType\": \"LONG\",\r\n      \"jobParamValue\": \"1000\"\r\n    },\r\n    {\r\n      \"jobParamName\": \"START\",\r\n      \"jobParamType\": \"DATE\",\r\n      \"jobParamValue\": \"20220103\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/saveJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"saveJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Job 등록",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobName\": \"yyyy\",\r\n  \"jobGroup\": 8888,\r\n  \"description\": \"설명-Simple\",\r\n  \"startTime\": \"2021-12-12 15:03:01\",\r\n  \"repeatInterval\": 2000,\r\n  \"repeatCount\": -1,\r\n  \"jobParameters\": [\r\n    {\r\n      \"jobParamName\": \"COUNT\",\r\n      \"jobParamType\": \"LONG\",\r\n      \"jobParamValue\": \"1000\"\r\n    },\r\n    {\r\n      \"jobParamName\": \"START\",\r\n      \"jobParamType\": \"DATE\",\r\n      \"jobParamValue\": \"20220103\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/saveJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"saveJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 목록",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/getAllJobs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"getAllJobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 상세",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobName\": \"yyyy\",\r\n  \"jobGroup\": 8888\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/getJobInfo?jobName=WWW&jobGroup=9999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"getJobInfo"
+					],
+					"query": [
+						{
+							"key": "jobName",
+							"value": "WWW"
+						},
+						{
+							"key": "jobGroup",
+							"value": "9999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "스케줄러 Shutdown",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/shutdown?wait=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"shutdown"
+					],
+					"query": [
+						{
+							"key": "wait",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "스케줄러 Start",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 메타정보",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/metaData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"metaData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 즉시시작",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobName\": \"yyyy\",\r\n  \"jobGroup\": 8888\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/startJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"startJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 멈춤",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobName\": \"yyyy\",\r\n  \"jobGroup\": 8888\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/pauseJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"pauseJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 재시작",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobName\": \"yyyy\",\r\n  \"jobGroup\": 8888\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/resumeJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"resumeJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 삭제",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"jobName\": \"yyyy\",\r\n  \"jobGroup\": 8888\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/scheduler/deleteJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"scheduler",
+						"deleteJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job 실행",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"jobParamName\": \"path\",\r\n    \"jobParamType\": \"STRING\",\r\n    \"jobParamValue\": \"src/test/resources/board.trc\"\r\n  },\r\n  {\r\n    \"jobParamName\": \"start\",\r\n    \"jobParamType\": \"DATE\",\r\n    \"jobParamValue\": \"20220105\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/onm-batch/job/apiTraceJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"onm-batch",
+						"job",
+						"apiTraceJob"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

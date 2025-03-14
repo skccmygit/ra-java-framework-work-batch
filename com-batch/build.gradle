@@ -1,0 +1,40 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-batch'
+    implementation project(":job-scheduler")
+    implementation project(":common-export")
+    implementation project(":account-export")
+
+    testImplementation 'org.springframework.batch:spring-batch-test'
+    /*
+        for mybatis
+     */
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+    /*
+        redis 설정
+     */
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.apache.commons:commons-pool2:2.11.1'
+    // implementation 'io.lettuce:lettuce-core'
+
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    /*
+        for Test
+     */
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    /*
+        for Feign Client
+     */
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+    /* SHA256 알고리즘 */
+    implementation 'commons-codec:commons-codec:1.15'
+
+    implementation 'mysql:mysql-connector-java:8.0.32'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
+
+}
+
+version '1.0'

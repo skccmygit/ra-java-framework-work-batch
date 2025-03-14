@@ -1,0 +1,17 @@
+version '1.0'
+
+bootRun {
+    enabled = false
+}
+
+bootJar {
+    enabled = false
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-batch'
+    implementation 'org.springframework.boot:spring-boot-starter-quartz'
+
+    testImplementation 'org.springframework.batch:spring-batch-test'
+    implementation 'mysql:mysql-connector-java:8.0.32'
+}
