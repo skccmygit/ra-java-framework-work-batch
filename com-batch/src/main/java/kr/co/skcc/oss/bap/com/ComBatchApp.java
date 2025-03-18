@@ -24,7 +24,6 @@ public class ComBatchApp {
         // 시스템 속성 설정
         // SysUtils.setSystemProperties();
         SpringApplication.run(ComBatchApp.class, args);
-        System.out.println("Run ComBatchApp to ...");
     }
 
     @Bean(name = "asyncJobLauncher")

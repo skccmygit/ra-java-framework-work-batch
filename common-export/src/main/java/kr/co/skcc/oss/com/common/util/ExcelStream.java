@@ -118,7 +118,8 @@ public class ExcelStream {
                 }
             }
         } catch(Exception e){
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
         }
     }
 

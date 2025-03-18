@@ -98,7 +98,8 @@ public class APIAuthorizationInterceptor implements HandlerInterceptor {
         } catch (UnauthorizedException ue){
             throw ue;
         } catch ( Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             log.error("API Check UnexpectedException");
             throw new UnauthorizedException("COM.W0002", e.getCause()) ;
         }

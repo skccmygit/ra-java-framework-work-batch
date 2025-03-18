@@ -9,7 +9,8 @@ spring:
       stg: common-env, stg-env
       prd: common-env, prd-env
     active: local
-
+  java:
+    options: "-Xms512m -Xmx2g"
 ---
 
 spring:
@@ -171,7 +172,7 @@ spring:
       fetch-min-size: 15360
       fetch-max-wait: 2000
 server:
-  port: 9091
+  port: 8181
 
 ---
 
@@ -181,7 +182,7 @@ spring:
       on-profile: dev-env
 
 server:
-  port: 8081
+  port: 8181
 
 
 ---
@@ -192,7 +193,7 @@ spring:
       on-profile: stg-env
 
 server:
-  port: 8081
+  port: 8181
 
 
 ---
@@ -203,4 +204,4 @@ spring:
       on-profile: prd-env
 
 server:
-  port: 8081
+  port: 8181

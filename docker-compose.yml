@@ -1,10 +1,10 @@
 version: '3.8'
 services:
-  zookeeper:
-    image: wurstmeister/zookeeper:latest
-    container_name: zookeeper-work-batch
-    ports:
-      - "2181:2181"
+#  zookeeper:
+#    image: wurstmeister/zookeeper:latest
+#    container_name: zookeeper-work-batch
+#    ports:
+#      - "2181:2181"
 
   kafka:
     image: wurstmeister/kafka:latest
@@ -25,14 +25,14 @@ services:
       - "9092:9092"
       - "9093:9093"
 
-  kafka-ui:
-    image: provectuslabs/kafka-ui
-    container_name: kafka-ui-work-batch
-    environment:
-      KAFKA_CLUSTERS_0_NAME: local
-      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9093
-    ports:
-      - "8080:8080"
+#  kafka-ui:
+#    image: provectuslabs/kafka-ui
+#    container_name: kafka-ui-work-batch
+#    environment:
+#      KAFKA_CLUSTERS_0_NAME: local
+#      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9093
+#    ports:
+#      - "8080:8080"
 
   redis:
     image: redis:6.2.6
@@ -53,20 +53,35 @@ services:
       - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
       - mysql:/var/lib/mysql
 
-  java-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: java-work-batch
-    environment:
-      JAVA_OPTS: "-Xmx4096m -Xms4096m"
-    ports:
-      - "8081:8081"
-    depends_on:
-      - kafka
-      - redis
-      - mysql
-    entrypoint: ["java", "-jar", "com-batch.jar"]
+#  com-batch:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    container_name: com-batch-work-batch
+#    environment:
+#      JAVA_OPTS: "-Xmx2048m -Xms2048m"
+#    ports:
+#      - "8181:8181"
+#    depends_on:
+#      - kafka
+#      - redis
+#      - mysql
+#    entrypoint: ["java", "-jar", "com-batch.jar"]
+#
+#  job-scheduler:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    container_name: job-scheduler-work-batch
+#    environment:
+#      JAVA_OPTS: "-Xmx2048m -Xms2048m"
+#    ports:
+#      - "8282:8282"
+#    depends_on:
+#      - kafka
+#      - redis
+#      - mysql
+#    entrypoint: ["java", "-jar", "job-scheduler.jar"]
 
 volumes:
   mysql:

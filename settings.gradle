@@ -1,5 +1,5 @@
 rootProject.name = 'work-batch'
+include 'com-batch'
 include 'account-export'
 include 'common-export'
-include 'com-batch'
 include 'job-scheduler'

@@ -98,7 +98,8 @@ public class ExcelUtil {
             return createFile();
 
         } catch(Exception e){
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return null;
         } finally{
             if(wb != null) {
@@ -330,10 +331,12 @@ public class ExcelUtil {
             // 암호화 여부 & 환경에 따라 Drm 처리
             return saveFilePath;
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return null;
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return null;
         }
     }
@@ -386,7 +389,8 @@ public class ExcelUtil {
                     out.write(buf, 0, len);
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+//                e.printStackTrace();
+                log.error(e.getMessage(), e);
                 throw new ServiceException("COM.I0003");
             }
         }
@@ -477,7 +481,8 @@ public class ExcelUtil {
 
             return newFilePath;
         }catch(Exception e){
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return null;
         }
     }
@@ -503,7 +508,8 @@ public class ExcelUtil {
             return tempFile;
 
         }catch(Exception e){
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return null;
         }
     }
@@ -591,16 +597,19 @@ public class ExcelUtil {
 
             return saveFilePath;
         } catch(FileNotFoundException e){
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return null;
         } catch(IOException e){
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return null;
         } finally {
             try {
                 if(bufWriter != null) bufWriter.close();
             } catch(IOException e){
-                e.printStackTrace();
+//                e.printStackTrace();
+                log.error(e.getMessage(), e);
             }
         }
     }

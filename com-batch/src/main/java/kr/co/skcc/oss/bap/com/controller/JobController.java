@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/${spring.application.name}/job")
+@RequestMapping("/com-batch")
 @Slf4j
 public class JobController {
 
@@ -25,6 +25,11 @@ public class JobController {
 
     @Autowired
     JobLocator jobLocator;
+
+    @GetMapping("/health-check")
+    public String healthCheck() {
+        return "Ping Pong - Com Batch ...";
+    }
 
     @PostMapping("/{jobName}")
     public BatchStatus run(@PathVariable String jobName, @RequestBody(required = false) List<JobParameter> jobData) throws Exception {

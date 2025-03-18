@@ -1,3 +1,11 @@
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'kr.co.skcc.oss.bap.com.ComBatchApp'  // Replace with the actual main class of your application
+        )
+    }
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-batch'
     implementation project(":job-scheduler")

@@ -76,7 +76,8 @@ public class EmailUtil {
             result = sendJavaMail(content, user);
 
         }catch(Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            log.error(e.getMessage(), e);
             return result;
         }
         return result;

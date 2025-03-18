@@ -68,7 +68,8 @@ public class KafkaErrorHandler implements KafkaListenerErrorHandler {
 //                }
             }
             catch (JsonProcessingException e) {
-                e.printStackTrace();
+//                e.printStackTrace();
+                log.error(e.getMessage(), e);
                 consumer.commitAsync();
             }
             kafkaTemplate.send(produce);
