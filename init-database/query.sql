@@ -1,5 +1,6 @@
 -- Database생성
 CREATE DATABASE OCO;
+
 -- 계정 생성
 CREATE USER 'com_dev'@'%' IDENTIFIED BY 'qwer1234!';
 
