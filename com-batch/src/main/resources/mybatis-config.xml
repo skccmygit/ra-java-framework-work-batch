@@ -16,6 +16,6 @@
     </settings>
 
     <typeAliases>
-        <package name="kr.co.skcc.oss.bap.com.domain"/>
+        <package name="kr.co.skcc.base.bap.com.domain"/>
     </typeAliases>
 </configuration>

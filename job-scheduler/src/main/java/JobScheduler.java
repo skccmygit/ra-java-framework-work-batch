@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
 //@SpringBootApplication.
-//@ComponentScan(basePackages = {"kr.co.skcc.oss.bap.scheduler"})
+//@ComponentScan(basePackages = {"kr.co.skcc.base.bap.scheduler"})
 //@PropertySource("classpath:quartz.yml")
 public class JobScheduler {
 

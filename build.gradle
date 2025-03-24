@@ -10,7 +10,7 @@ buildscript {
 }
 
 allprojects {
-	group 'kr.co.skcc.oss.com'
+	group 'kr.co.skcc.base.com'
 	version '1.0-RELEASE'
 }
 

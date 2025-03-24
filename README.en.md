@@ -80,7 +80,7 @@ The setup steps are as follows:
     - **Password**: qwer1234!
 
 
-- Test Connection**: Check the connection to ensure you can access the MySQL server.
+- Test Connection: Check the connection to ensure you can access the MySQL server.
   You maybe need to set 'allowPublicKeyRetrieval=true' if necessary.
 
 Once the connection is successful, you can use the graphical interface of the IDE to manage databases, perform SQL
