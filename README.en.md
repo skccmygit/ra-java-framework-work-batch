@@ -116,7 +116,7 @@ queries, and interact with the data more easily.
 The project includes SQL scripts for initial setup in `folder` `init-database`:
 
 - `menu.sql` Menu related data
-- `query.sql` User related data
+- `query.sql` Database dump
 - `query_batch.sql` Job Scheduler related data
 
 Logic ERD
@@ -124,6 +124,12 @@ Logic ERD
 
 Physic ERD
 ![physic-erd.png](docs/imgs/physic-erd.png)
+
+## Related Repositories
+
+- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common)
+- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account)
+- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway)
 
 ## Additional Resources
 

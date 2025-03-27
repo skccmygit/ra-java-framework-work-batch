@@ -114,7 +114,7 @@ MySQL Workbench나 MySQL을 지원하는 다른 IDE를 사용하여 MySQL 컨테
 프로젝트는 `init-database` 폴더에 초기 설정을 위한 SQL 스크립트를 포함하고 있습니다:
 
 - `menu.sql` 메뉴 관련 데이터
-- `query.sql` 사용자 관련 데이터
+- `query.sql` 데이터베이스 덤프
 - `query_batch.sql` Job Scheduler 관련 데이터
 
 논리 ERD
@@ -122,6 +122,12 @@ MySQL Workbench나 MySQL을 지원하는 다른 IDE를 사용하여 MySQL 컨테
 
 물리 ERD
 ![physic-erd.png](docs/imgs/physic-erd.png)
+
+## 관련 저장소
+
+- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common)
+- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account)
+- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway)
 
 ## 추가 리소스
 
