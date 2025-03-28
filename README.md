@@ -116,6 +116,8 @@ MySQL Workbench나 MySQL을 지원하는 다른 IDE를 사용하여 MySQL 컨테
 - `menu.sql` 메뉴 관련 데이터
 - `query.sql` 데이터베이스 덤프
 - `query_batch.sql` Job Scheduler 관련 데이터
+- `job_scheduler.sql` Table Job Scheduler 관련
+- `common_export.sql` Table 공통
 
 논리 ERD
 ![logic-erd.png](docs/imgs/logic-erd.png)

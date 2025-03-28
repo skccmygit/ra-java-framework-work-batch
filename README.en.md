@@ -118,6 +118,8 @@ The project includes SQL scripts for initial setup in `folder` `init-database`:
 - `menu.sql` Menu related data
 - `query.sql` Database dump
 - `query_batch.sql` Job Scheduler related data
+- `job_scheduler.sql` Table Job Scheduler related
+- `common_export.sql` Table Common
 
 Logic ERD
 ![logic-erd.png](docs/imgs/logic-erd.png)
