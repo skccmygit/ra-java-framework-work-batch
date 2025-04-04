@@ -5,7 +5,13 @@
 
 Welcome to [RA-JAVA-FRAMEWORK-WORK-BATCH]!
 This project document will guide you through setting up the project, so you can get started quickly. Whether you're contributing or just using the project, this guide will help you get up and running.
-This project contains the following functions for work batch: Job Scheduler, Batch.
+This project performs the following job scheduling and batch operations:
+- Automatically creates accounts for permanent employees who are required to use the system, based on their department and job title.
+- Automatically maps user default permissions
+- Grants menu and button access rights based on user default permissions
+- Deletes accounts of employees who have retired
+- Reminds users to change their passwords regularly 
+- ...
 
 ## Prerequisites
 
