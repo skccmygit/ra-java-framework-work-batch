@@ -160,7 +160,8 @@ DB 및 사용자 생성 완료 후 'init-database' 폴더에 들어 있는 5개�
     - **JDBC URL**: jdbc:h2:mem:quartz
     - **User Name**: sa
     - **Password**:
-    - ![h2db.png](docs/imgs/h2db.png)
+
+![h2db.png](docs/imgs/h2db.png)
 
 ## 개발
 

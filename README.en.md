@@ -158,7 +158,8 @@ After init schema and user, you must run sql script in 5 sql files (in the folde
     - **JDBC URL**: jdbc:h2:mem:quartz
     - **User Name**: sa
     - **Password**:
-    - ![h2db.png](docs/imgs/h2db.png)
+
+![h2db.png](docs/imgs/h2db.png)
 
 ## Development
 
