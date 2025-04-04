@@ -42,9 +42,10 @@ docker-compose -f docker-compose.yml up -d
 
 3. 데이터베이스 초기화:
 
-![Notice]
-Mysql보다 H2 database를 사용하려고 하시면 docker-compose.yml 파일에서 Mysql 서비스를 주석처리 하셔야 됩니다.
-그 다음은 이 스탭을 무시하고 "H2 데이터베이스로 애플리케이션 실행하기"라는 부분으로 진행하시면 됩니다.
+> [!NOTE]
+> 
+> Mysql보다 H2 database를 사용하려고 하시면 docker-compose.yml 파일에서 Mysql 서비스를 주석처리 하셔야 됩니다.
+> 그 다음은 이 스탭을 무시하고 "H2 데이터베이스로 애플리케이션 실행하기"라는 부분으로 진행하시면 됩니다.
 
 ![mysql-service.png](docs/imgs/mysql-service.png)
 
