@@ -9,7 +9,7 @@ This project contains the following functions for work batch: Job Scheduler, Bat
 
 ## Prerequisites
 
-- JDK 21
+- JDK 17
 - Docker and Docker Compose
 - Gradle 8.12.1 (or use the included Gradle wrapper)
 
@@ -28,7 +28,7 @@ The project consists of the following modules:
 
 ```bash
 git clone <repository-url>
-cd work-batch
+cd ra-java-framework-work-batch
 ```
 
 2. Start the required dependencies using Docker Compose:
@@ -40,22 +40,30 @@ docker-compose -f docker-compose.yml up -d
 
 3. Initialize the database:
 
+![Notice]
+If you prefer to use the H2 database instead of mysql, please comment out the MySQL service in the docker-compose.yml file. 
+Then, skip this step and proceed to the section titled "Running the Application with H2 Database."
+
+![mysql-service.png](docs/imgs/mysql-service.png)
+
 ```bash
 # List all container
   docker ps
 
-# Run mysql container - change equivalent <container_id> value	
-  docker exec -it <container_id> bash
+# Run mysql container
+  docker exec -it mysql-work-batch bash
 
 # Login mysql
   mysql -u root -p
 
-# Input MySql password
+# Input MySql password (qwer1234)
 
 # Run the SQL files
 # Create Database
   CREATE DATABASE OCO;
   CREATE DATABASE quartz;
+  CREATE DATABASE OIF;
+  CREATE DATABASE OOM;
 
 # Create User
   CREATE USER 'com_dev'@'%' IDENTIFIED BY 'qwer1234!';
@@ -63,6 +71,8 @@ docker-compose -f docker-compose.yml up -d
 # Grant permission
   GRANT ALL PRIVILEGES ON OCO.* TO 'com_dev'@'%';  
   GRANT ALL PRIVILEGES ON quartz.* TO 'com_dev'@'%';
+  GRANT ALL PRIVILEGES ON OIF.* TO 'com_dev'@'%';
+  GRANT ALL PRIVILEGES ON OOM.* TO 'com_dev'@'%';
 
   FLUSH PRIVILEGES;
 ```
@@ -86,11 +96,26 @@ The setup steps are as follows:
 Once the connection is successful, you can use the graphical interface of the IDE to manage databases, perform SQL
 queries, and interact with the data more easily.
 
+After init schema and user, you must run sql script in 5 sql files (in the folder 'init-database'). 
+
+- `query.sql`
+- `menu.sql`
+- `query_batch.sql`
+- `job_scheduler.sql`
+- `common_export.sql`
+
 5. Build the project:
 
 ```bash
 ./gradlew clean build
 ```
+
+> [!NOTE]
+>
+> In case you get error `./gradlew: Permission denied` you should try to run one of these command  
+>    -``sudo chmod +x ./gradlew``
+>
+>    -``git update-index --chmod=+x gradlew``
 
 ## Running the Application
 
@@ -100,7 +125,14 @@ queries, and interact with the data more easily.
 ./gradlew :com-batch:bootRun
 ```
 
-2. The main service will be available at `http://localhost:8080/actuator/health`
+> [!NOTE]
+>
+> You can also run project in IDE likes IntelliJ, Eclipse, ...
+> In case you get error when starting this project, you should check the project config:
+> - JDK version
+> - Gradle config
+> - Proxy prevention
+> - Try to remove '.gradle' folder inside project and rebuild gradle in step 2 (Build the project)
 
 ## Running the Application with H2 Database
 
@@ -130,8 +162,8 @@ queries, and interact with the data more easily.
 
 The project includes SQL scripts for initial setup in `folder` `init-database`:
 
-- `menu.sql` Menu related data
 - `query.sql` Database dump
+- `menu.sql` Menu related data
 - `query_batch.sql` Job Scheduler related data
 - `job_scheduler.sql` Table Job Scheduler related
 - `common_export.sql` Table Common
@@ -158,3 +190,5 @@ Physic ERD
 
 - If you encounter database connection issues, ensure the database container is running
 - Check log for detailed error messages in `logs` folder
+
+![logs.png](docs/imgs/log.png)
