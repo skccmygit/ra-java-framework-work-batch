@@ -19,7 +19,6 @@ import jakarta.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.HashMap;
 
-@Component
 @Configuration
 @EnableJpaRepositories(
         entityManagerFactoryRef = "quartzEntityManagerFactory",

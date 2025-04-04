@@ -12,6 +12,8 @@ dependencies {
     implementation project(":common-export")
     implementation project(":account-export")
 
+    runtimeOnly 'com.h2database:h2'
+
     testImplementation 'org.springframework.batch:spring-batch-test'
     /*
         for mybatis
@@ -43,6 +45,12 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
 
+}
+
+bootRun {
+    if (project.hasProperty("profile")) {
+        systemProperty "spring.profiles.active", project.getProperty("profile")
+    }
 }
 
 version '1.0'

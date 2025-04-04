@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: com-batch
+
+  config:
+    activate:
+      on-profile: common-env
+
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: QuartzScheduler
+            instanceId: AUTO
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 10
+            threadPriority: 5
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+            tablePrefix: quartz.QRTZ_
+            useProperties: false
+            isClustered: true
+            misfireThreshold: 60000
+            clusterCheckinInterval: 20000
+            dataSource: schedulerDataSource
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local-env
+
+  quartz:
+    properties:
+      org:
+        quartz:
+          dataSource:
+            schedulerDataSource:
+              user: sa
+              password:
+              driver: org.h2.Driver
+              URL: jdbc:h2:mem:quartz;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false
+              maxConnections: 5
+              validationQuery: select 1
+              provider: hikaricp
+---
+spring:
+  config:
+    activate:
+      on-profile: dev-env
+---
+spring:
+  config:
+    activate:
+      on-profile: stg-env
+---
+spring:
+  config:
+    activate:
+      on-profile: prd-env

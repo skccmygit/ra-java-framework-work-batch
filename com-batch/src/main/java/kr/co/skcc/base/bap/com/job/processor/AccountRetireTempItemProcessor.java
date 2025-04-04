@@ -1,7 +1,6 @@
 package kr.co.skcc.base.bap.com.job.processor;
 
 import kr.co.skcc.base.bap.com.repository.*;
-import kr.co.skcc.base.bap.com.repository.*;
 import kr.co.skcc.base.com.account.domain.account.Account;
 import kr.co.skcc.base.com.account.domain.auth.UserMenu;
 import kr.co.skcc.base.com.account.domain.auth.UserScrenBttn;

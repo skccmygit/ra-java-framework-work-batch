@@ -21,6 +21,7 @@ import java.util.Optional;
 
 @Slf4j
 public class AgentStartItemProcessor implements ItemProcessor<Object, Agent> {
+
     UserRoleRepository userRoleRepository;
 
     UserRoleHistRepository userRoleHistRepository;
@@ -28,6 +29,7 @@ public class AgentStartItemProcessor implements ItemProcessor<Object, Agent> {
     AccountRepository accountRepository;
 
     DeptRepository deptRepository;
+
     public AgentStartItemProcessor(UserRoleRepository userRoleRepository,
                                    UserRoleHistRepository userRoleHistRepository,
                                    AccountRepository accountRepository,

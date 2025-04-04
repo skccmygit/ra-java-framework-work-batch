@@ -55,6 +55,7 @@ subprojects {
 
 		implementation 'com.google.code.gson:gson:2.8.7'
 
+		runtimeOnly 'com.h2database:h2'
 		compileOnly 'org.projectlombok:lombok'
 		annotationProcessor 'org.projectlombok:lombok'
 

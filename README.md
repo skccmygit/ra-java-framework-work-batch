@@ -98,11 +98,26 @@ MySQL Workbench나 MySQL을 지원하는 다른 IDE를 사용하여 MySQL 컨테
 ./gradlew :com-batch:bootRun
 ```
 
-2. 메인 서비스는 `http://localhost:8181/com-batch/health-check`에서 확인할 수 있습니다.
-   ![swager.png](docs/imgs/HealthCheckComBatch.png)
+2. 메인 서비스는 `http://localhost:8080/actuator/health` 에서 확인할 수 있습니다.
 
-3. Job Scheduler 서비스는 `http://localhost:8181/job-scheduler/health-check`에서 확인할 수 있습니다.
-   ![swager.png](docs/imgs/HealthCheckJobScheduler.png)
+## H2 데이터베이스로 애플리케이션 실행하기
+
+1. 서비스 시작:
+
+```bash
+./gradlew :com-batch:bootRun -Pprofile=test
+```
+
+2. 메인 서비스는 http://localhost:8080/actuator/health에서 사용할 수 있습니다.
+3. H2 콘솔 http://localhost:8080/h2-console
+- H2 콘솔 로그인 설정:
+    - **Saved Settings**: Generic H2 (Embedded)
+    - **Setting Name**: Generic H2 (Embedded)
+    - **Driver Class**: org.h2.Driver
+    - **JDBC URL**: jdbc:h2:mem:quartz
+    - **User Name**: sa
+    - **Password**:
+    - ![h2db.png](docs/imgs/h2db.png)
 
 ## 개발
 

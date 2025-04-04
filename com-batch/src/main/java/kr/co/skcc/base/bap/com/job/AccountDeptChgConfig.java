@@ -7,10 +7,6 @@ import kr.co.skcc.base.bap.com.job.processor.*;
 import kr.co.skcc.base.bap.com.job.reader.*;
 import kr.co.skcc.base.bap.com.job.writer.*;
 import kr.co.skcc.base.bap.com.repository.*;
-import kr.co.skcc.base.bap.com.job.processor.*;
-import kr.co.skcc.base.bap.com.job.reader.*;
-import kr.co.skcc.base.bap.com.job.writer.*;
-import kr.co.skcc.base.bap.com.repository.*;
 import kr.co.skcc.base.com.account.domain.account.Account;
 import kr.co.skcc.base.com.account.domain.auth.UserRole;
 import kr.co.skcc.base.com.account.domain.hist.AccountStsChng;
@@ -26,12 +22,14 @@ import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import java.util.List;
 
 
 @Configuration
+@Profile("!test")
 @Slf4j
 public class AccountDeptChgConfig {
 

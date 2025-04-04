@@ -22,9 +22,11 @@ import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
+@Profile("!test")
 @Slf4j
 public class AgentManagementConfig {
 
@@ -79,7 +81,7 @@ public class AgentManagementConfig {
                 .reader(new AgentEndItemReader(entityManagerFactory))
                 .processor(new AgentEndItemProcessor(userRoleRepository,
                                                      userRoleHistRepository,
-                                                     accountRepository,
+                        accountRepository,
                                                      deptRepository))
                 .writer(new AgentItemWriter(entityManagerFactory))
                 .listener(commonStepListener)
@@ -98,7 +100,7 @@ public class AgentManagementConfig {
                 .reader(new AgentStartItemReader(entityManagerFactory))
                 .processor(new AgentStartItemProcessor(userRoleRepository,
                                                        userRoleHistRepository,
-                                                       accountRepository,
+                        accountRepository,
                                                        deptRepository))
                 .writer(new AgentItemWriter(entityManagerFactory))
                 .listener(commonStepListener)

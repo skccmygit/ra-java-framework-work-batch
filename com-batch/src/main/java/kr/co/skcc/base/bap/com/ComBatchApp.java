@@ -5,18 +5,23 @@ import org.springframework.batch.core.launch.support.TaskExecutorJobLauncher;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 
-@SpringBootApplication(exclude = {
-        org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
-        org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class
+@SpringBootApplication(
+        exclude = {
+                org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
+                org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class
+        }
+)
+@ComponentScan(basePackages = {
+        "kr.co.skcc.base.bap.com",
+        "kr.co.skcc.base.bap.scheduler",
+        "com.adtcaps.nextoss.da.bap.sap"
 })
-@ComponentScan(basePackages = {"kr.co.skcc.base.bap.com"
-                                ,"kr.co.skcc.base.bap.scheduler"
-                                ,"com.adtcaps.nextoss.da.bap.sap"})
 @EnableFeignClients
 public class ComBatchApp {
 

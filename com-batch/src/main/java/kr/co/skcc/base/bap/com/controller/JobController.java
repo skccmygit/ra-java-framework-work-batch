@@ -26,11 +26,6 @@ public class JobController {
     @Autowired
     JobLocator jobLocator;
 
-    @GetMapping("/health-check")
-    public String healthCheck() {
-        return "Ping Pong - Com Batch ...";
-    }
-
     @PostMapping("/{jobName}")
     public BatchStatus run(@PathVariable String jobName, @RequestBody(required = false) List<JobParameter> jobData) throws Exception {
         org.springframework.batch.core.Job job = jobLocator.getJob(jobName);

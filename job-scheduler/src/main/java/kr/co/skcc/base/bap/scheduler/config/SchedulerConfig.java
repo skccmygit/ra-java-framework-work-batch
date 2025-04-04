@@ -21,7 +21,7 @@ public class SchedulerConfig {
     @Autowired
     private ApplicationContext applicationContext;
 
-    @Value("${spring.application.name}")
+    @Value("${spring.application.name:com-batch}")
     private String appName;
 
     @Autowired

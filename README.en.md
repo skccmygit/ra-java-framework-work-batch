@@ -100,11 +100,26 @@ queries, and interact with the data more easily.
 ./gradlew :com-batch:bootRun
 ```
 
-2. The main service will be available at `http://localhost:8181/com-batch/health-check`
-   ![swager.png](docs/imgs/HealthCheckComBatch.png)
+2. The main service will be available at `http://localhost:8080/actuator/health`
 
-3. The Job Scheduler service will be available at `http://localhost:8181/job-scheduler/health-check`
-   ![swager.png](docs/imgs/HealthCheckJobScheduler.png)
+## Running the Application with H2 Database
+
+1. Start the service:
+
+```bash
+./gradlew :com-batch:bootRun -Pprofile=test
+```
+
+2. The main service will be available at `http://localhost:8080/actuator/health`
+3. H2 Console `http://localhost:8080/h2-console`
+- Set up config login H2 Console:
+    - **Saved Settings**: Generic H2 (Embedded)
+    - **Setting Name**: Generic H2 (Embedded)
+    - **Driver Class**: org.h2.Driver
+    - **JDBC URL**: jdbc:h2:mem:quartz
+    - **User Name**: sa
+    - **Password**:
+    - ![h2db.png](docs/imgs/h2db.png)
 
 ## Development
 

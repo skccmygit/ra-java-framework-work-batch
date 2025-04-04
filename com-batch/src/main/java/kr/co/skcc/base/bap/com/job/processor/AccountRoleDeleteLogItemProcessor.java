@@ -20,6 +20,7 @@ import java.util.List;
 public class AccountRoleDeleteLogItemProcessor implements ItemProcessor<Object, List<UserRoleHist>> {
 
     UserRoleRepository userRoleRepository;
+
     DeptRepository deptRepository;
 
     AccountRepository accountRepository;

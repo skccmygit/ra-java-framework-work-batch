@@ -27,7 +27,7 @@ COPY --from=build /app/common-export/build/libs/common-export-*.jar common-expor
 COPY --from=build /app/account-export/build/libs/account-export-*.jar account-export.jar
 
 # Expose the port the app runs on
-EXPOSE 8181 8282 8383 8484
+EXPOSE 8080 8282 8383 8484
 
 # Set RAM limit for the Java process (4 GB)
 ENTRYPOINT ["java", "-Xmx2048m", "-Xms2048m", "-jar", "com-batch.jar"]

@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -23,11 +24,14 @@ public class SecurityConfig {
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-                .csrf(csrf -> csrf.disable())
-                .cors(cors-> cors.configure(http))
-                .authorizeRequests(auth -> auth
+                .csrf(csrf -> csrf.disable())  // 🔴 Tắt CSRF để tránh lỗi với H2 Console
+                .cors(cors -> cors.configure(http))
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/h2-console/**").permitAll()  // ✅ Cho phép H2 Console
                         .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
-                        .anyRequest().permitAll()).build();
+                        .anyRequest().authenticated())
+                .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin))  // ✅ Cho phép sử dụng iframe cho H2 Console
+                .build();
     }
 
     @Profile("local")

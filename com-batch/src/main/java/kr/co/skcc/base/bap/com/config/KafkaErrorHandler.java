@@ -25,10 +25,10 @@ public class KafkaErrorHandler implements KafkaListenerErrorHandler {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    @Value("${kafka.topic.API-TRACE-LOG}")
+    @Value("${kafka.topic.API-TRACE-LOG:ONM-T-LOG-API}")
     private String API_TRACE_LOG;
 
-    @Value("${kafka.topic.API-TRACE-LOG-ERR}")
+    @Value("${kafka.topic.API-TRACE-LOG-ERR:ONM-T-LOG-API-ERR}")
     private String API_TRACE_LOG_ERR;
 
 

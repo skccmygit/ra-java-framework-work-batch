@@ -22,6 +22,7 @@ import java.util.Optional;
 
 @Slf4j
 public class AgentEndItemProcessor implements ItemProcessor<Object, Agent> {
+
     UserRoleRepository userRoleRepository;
 
     UserRoleHistRepository userRoleHistRepository;
@@ -29,6 +30,7 @@ public class AgentEndItemProcessor implements ItemProcessor<Object, Agent> {
     AccountRepository accountRepository;
 
     DeptRepository deptRepository;
+
     public AgentEndItemProcessor(UserRoleRepository userRoleRepository,
                                  UserRoleHistRepository userRoleHistRepository,
                                  AccountRepository accountRepository,

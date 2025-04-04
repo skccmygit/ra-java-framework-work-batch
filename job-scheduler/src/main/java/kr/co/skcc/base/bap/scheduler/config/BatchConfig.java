@@ -23,13 +23,6 @@ public class BatchConfig {
     private static final String TIME_FORMAT = "HHmmss";
     private static final String DATETIME_FORMAT = "yyyyMMddHHmmss";
 
-    @Bean
-    public JobRegistryBeanPostProcessor jobRegistryBeanPostProcessor(JobRegistry jobRegistry) {
-        JobRegistryBeanPostProcessor jobRegistryBeanPostProcessor = new JobRegistryBeanPostProcessor();
-        jobRegistryBeanPostProcessor.setJobRegistry(jobRegistry);
-        return jobRegistryBeanPostProcessor;
-    }
-
     public static JobParameters getJobParameters(List<JobParameter> jobData) {
         JobParametersBuilder builder = new JobParametersBuilder();
         log.debug("JobParameters: {}", jobData);

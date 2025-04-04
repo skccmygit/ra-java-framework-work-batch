@@ -1,52 +1,15 @@
 spring:
   config:
-    import: classpath:quartz.yml
+    import: classpath:quartztest.yml
 
-  profiles:
-    group:
-      local: common-env, local-env
-      dev: common-env, dev-env
-      stg: common-env, stg-env
-      prd: common-env, prd-env
-    active: local
-    #active: test
   java:
     options: "-Xms512m -Xmx2g"
----
-
-spring:
-  config:
-    activate:
-      on-profile: common-env
 
   application:
     name: com-batch
 
   main:
     allow-bean-definition-overriding: true
-
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    database: mysql
-    generate-ddl: false
-    open-in-view: false
-    show-sql: false
-    properties:
-      hibernate:
-        format_sql: true
-    hibernate:
-      ddl-auto: none
-      connection:
-        provider_class: com.zaxxer.hikari.hibernate.HikariConnectionProvider
-      use-new-id-generator-mappings: false
-      naming:
-        strategy: org.hibernate.cfg.EJB3NamingStrategy
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-
-  sql:
-    init:
-      mode: never
 
   batch:
     jdbc:
@@ -58,10 +21,10 @@ spring:
 
   datasource:
     batch:
-      username: com_dev
-      password: qwer1234!
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3307?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Seoul&allowMultiQueries=true&zeroDateTimeBehavior=CONVERT_TO_NULL
+      url: jdbc:h2:mem:batch;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false
+      username: sa
+      password:
+      driver-class-name: org.h2.Driver
       hikari:
         pool-name: Hikari
         connection-timeout: 30000
@@ -69,12 +32,12 @@ spring:
         maximum-pool-size: 5
         idle-timeout: 600000
         max-lifetime: 1800000
-        auto-commit: false
+        auto-commit: true
     quartz:
-      username: com_dev
-      password: qwer1234!
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3307?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Seoul&allowMultiQueries=true&zeroDateTimeBehavior=CONVERT_TO_NULL
+      url: jdbc:h2:mem:quartz;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false
+      username: sa
+      password:
+      driver-class-name: org.h2.Driver
       hikari:
         pool-name: Hikari
         connection-timeout: 30000
@@ -82,7 +45,29 @@ spring:
         maximum-pool-size: 5
         idle-timeout: 600000
         max-lifetime: 1800000
-        auto-commit: false
+        auto-commit: true
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode: always
+      schema-locations:
+        - classpath:init-db/schema/query.sql
+        - classpath:init-db/schema/job_scheduler.sql
+        - classpath:init-db/schema/common_export.sql
+        - classpath:init-db/schema/query_batch.sql
+      data-locations: classpath:init-db/data/menu.sql
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: true
 
 management:
   health:
@@ -134,12 +119,6 @@ kafka:
     API-TRACE-LOG: onm-g-log-api
   concurrency:
     API-TRACE-LOG: 3
----
-
-spring:
-  config:
-    activate:
-      on-profile: local-env
 
   data:
     redis:
@@ -172,37 +151,7 @@ spring:
       max-poll-records: 50
       fetch-min-size: 15360
       fetch-max-wait: 2000
-server:
-  port: 8080
 
----
-
-spring:
-  config:
-    activate:
-      on-profile: dev-env
-
-server:
-  port: 8080
-
-
----
-
-spring:
-  config:
-    activate:
-      on-profile: stg-env
-
-server:
-  port: 8080
-
-
----
-
-spring:
-  config:
-    activate:
-      on-profile: prd-env
 
 server:
   port: 8080

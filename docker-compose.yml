@@ -61,7 +61,7 @@ services:
 #    environment:
 #      JAVA_OPTS: "-Xmx2048m -Xms2048m"
 #    ports:
-#      - "8181:8181"
+#      - "8080:8080"
 #    depends_on:
 #      - kafka
 #      - redis

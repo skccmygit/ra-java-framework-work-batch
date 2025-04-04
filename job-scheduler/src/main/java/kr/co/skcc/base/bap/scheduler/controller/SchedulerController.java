@@ -19,11 +19,6 @@ public class SchedulerController {
     @Autowired
     private SchedulerJobService scheduleJobService;
 
-    @GetMapping("/health-check")
-    public String healthCheck() {
-        return "Ping Pong - Job Scheduler ...";
-    }
-
     @RequestMapping(value = "/saveJob", method = RequestMethod.POST)
     public Object saveJob(@RequestBody SchedulerJobDto job) {
         log.info("job={}", job);

@@ -6,12 +6,9 @@ import kr.co.skcc.base.bap.com.job.listener.CommonStepListener;
 import kr.co.skcc.base.bap.com.job.processor.*;
 import kr.co.skcc.base.bap.com.job.reader.*;
 import kr.co.skcc.base.bap.com.repository.*;
-import kr.co.skcc.base.bap.com.job.processor.*;
-import kr.co.skcc.base.bap.com.job.reader.*;
 import kr.co.skcc.base.bap.com.job.writer.AccountItemWriter;
 import kr.co.skcc.base.bap.com.job.writer.AccountStsChngItemWriter;
 import kr.co.skcc.base.bap.com.job.writer.UserRoleHistItemListWriter;
-import kr.co.skcc.base.bap.com.repository.*;
 import kr.co.skcc.base.com.account.domain.account.Account;
 import kr.co.skcc.base.com.account.domain.hist.AccountStsChng;
 import kr.co.skcc.base.com.account.domain.hist.UserRoleHist;
@@ -25,11 +22,13 @@ import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import java.util.List;
 
 @Configuration
+@Profile("!test")
 @Slf4j
 public class AccountStsUpdateConfig {
 

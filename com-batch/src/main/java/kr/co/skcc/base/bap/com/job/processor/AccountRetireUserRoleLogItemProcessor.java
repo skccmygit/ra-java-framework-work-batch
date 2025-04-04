@@ -21,6 +21,7 @@ public class AccountRetireUserRoleLogItemProcessor implements ItemProcessor<Obje
     UserRoleRepository userRoleRepository;
 
     AccountRepository accountRepository;
+
     public AccountRetireUserRoleLogItemProcessor(UserRoleRepository userRoleRepository, AccountRepository accountRepository) {
         this.userRoleRepository = userRoleRepository;
         this.accountRepository = accountRepository;

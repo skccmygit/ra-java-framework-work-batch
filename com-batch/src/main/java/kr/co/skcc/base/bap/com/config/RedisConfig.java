@@ -37,19 +37,19 @@ import java.time.Duration;
 @EnableRedisRepositories
 public class RedisConfig {
 
-    @Value("${spring.data.redis.timeout}")
+    @Value("${spring.data.redis.timeout:30000}")
     private int timeout;
 
-    @Value("${spring.data.redis.lettuce.pool.maxTotal}")
+    @Value("${spring.data.redis.lettuce.pool.maxTotal:8}")
     private int maxTotal;
 
-    @Value("${spring.data.redis.lettuce.pool.maxWaitMillis}")
+    @Value("${spring.data.redis.lettuce.pool.maxWaitMillis:10000}")
     private long maxWaitMillis;
 
-    @Value("${spring.data.redis.lettuce.pool.maxIdle}")
+    @Value("${spring.data.redis.lettuce.pool.maxIdle:8}")
     private int maxIdle;
 
-    @Value("${spring.data.redis.lettuce.pool.minIdle}")
+    @Value("${spring.data.redis.lettuce.pool.minIdle:0}")
     private int minIdle;
 
     private RedisStandaloneConfiguration redisStandaloneConfiguration(){
