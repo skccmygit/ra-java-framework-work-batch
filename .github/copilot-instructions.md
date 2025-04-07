@@ -15,21 +15,20 @@ ra-java-framework-work-batch/
 │   ├── src/                   # Source code directory
 │       ├── main/              # Main application code
 │           ├── java/          # Java source code
-│               ├── kr/
-│                   ├── co/
-│                       ├── skcc/
-│                           ├── base/
-│                               ├── bap/
-│                                   ├── com/ # Batch processing logic
-│                                       ├── config/       # Configuration classes
-│                                       ├── controller/   # REST API controllers
-│                                       ├── job/          # Job definitions and steps
-│                                           ├── listener/ # Job and step listeners
-│                                           ├── processor/ # Item processors
-│                                           ├── reader/    # Item readers
-│                                           ├── tasklet/   # Tasklets
-│                                           ├── writer/    # Item writers
-│                                       ├── repository/   # JPA repository interfaces
+│               ├── com/
+│                   ├── skcc/
+│                       ├── ra/
+│                           ├── bap/
+│                               ├── com/ # Batch processing logic
+│                                   ├── config/       # Configuration classes
+│                                   ├── controller/   # REST API controllers
+│                                   ├── job/          # Job definitions and steps
+│                                       ├── listener/ # Job and step listeners
+│                                       ├── processor/ # Item processors
+│                                       ├── reader/    # Item readers
+│                                       ├── tasklet/   # Tasklets
+│                                       ├── writer/    # Item writers
+│                                   ├── repository/   # JPA repository interfaces
 ├── common-export/             # Common utilities and shared components
 ├── docs/                      # Documentation directory
 ├── gradle/                    # Gradle-related directory
@@ -38,17 +37,16 @@ ra-java-framework-work-batch/
 │   ├── src/                   # Source code directory
 │       ├── main/              # Main application code
 │           ├── java/          # Java source code
-│               ├── kr/
-│                   ├── co/
-│                       ├── skcc/
-│                           ├── base/
-│                               ├── bap/
-│                                   ├── scheduler/ # Job scheduling logic
-│                                       ├── config/       # Configuration classes
-│                                       ├── domain/       # Domain classes
-│                                       ├── job/          # Quartz job definitions
-│                                       ├── repository/   # JPA repository interfaces
-│                                       ├── service/      # Service layer
+│               ├── com/
+│                   ├── skcc/
+│                       ├── ra/
+│                           ├── bap/
+│                               ├── scheduler/ # Job scheduling logic
+│                                   ├── config/       # Configuration classes
+│                                   ├── domain/       # Domain classes
+│                                   ├── job/          # Quartz job definitions
+│                                   ├── repository/   # JPA repository interfaces
+│                                   ├── service/      # Service layer
 ```
 
 ---

@@ -1,7 +1,7 @@
 jar {
     manifest {
         attributes(
-                'Main-Class': 'kr.co.skcc.base.bap.com.ComBatchApp'  // Replace with the actual main class of your application
+                'Main-Class': 'com.skcc.ra.bap.ComBatchApp'  // Replace with the actual main class of your application
         )
     }
 }
