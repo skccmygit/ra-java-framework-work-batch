@@ -53,36 +53,6 @@ services:
       - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
       - mysql:/var/lib/mysql
 
-#  com-batch:
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-#    container_name: com-batch-work-batch
-#    environment:
-#      JAVA_OPTS: "-Xmx2048m -Xms2048m"
-#    ports:
-#      - "8080:8080"
-#    depends_on:
-#      - kafka
-#      - redis
-#      - mysql
-#    entrypoint: ["java", "-jar", "com-batch.jar"]
-#
-#  job-scheduler:
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-#    container_name: job-scheduler-work-batch
-#    environment:
-#      JAVA_OPTS: "-Xmx2048m -Xms2048m"
-#    ports:
-#      - "8282:8282"
-#    depends_on:
-#      - kafka
-#      - redis
-#      - mysql
-#    entrypoint: ["java", "-jar", "job-scheduler.jar"]
-
 volumes:
   mysql:
     driver: local
