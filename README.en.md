@@ -103,13 +103,17 @@ The setup steps are as follows:
 Once the connection is successful, you can use the graphical interface of the IDE to manage databases, perform SQL
 queries, and interact with the data more easily.
 
-After init schema and user, you must run sql script in 5 sql files (in the folder 'init-database'). 
+After init schema and user, you must run sql script in 5 sql files (`query.sql`, `menu.sql`, `query_batch.sql`, `job_scheduler.sql`, `common_export.sql` in the folder `init-database`).
 
-- `query.sql`
-- `menu.sql`
-- `query_batch.sql`
-- `job_scheduler.sql`
-- `common_export.sql`
+First, run the script command in the `query.sql` file to create the tables.
+
+Then, run the script command in the `menu.sql` file to add sample data for the menu configuration.
+
+Then, run the script command in the `query_batch.sql`
+
+Then, run the script command in the `job_scheduler.sql`
+
+Then, run the script command in the `common_export.sql`
 
 5. Build the project:
 
@@ -184,9 +188,9 @@ Physic ERD
 
 ## Related Repositories
 
-- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common)
-- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account)
-- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway)
+- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API Management / Menu Management / Code Management / File Management / etc.
+- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account) Authentication / Authorization / Account Management / History Management
+- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API Gateway
 
 ## Additional Resources
 

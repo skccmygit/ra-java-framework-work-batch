@@ -102,12 +102,17 @@ MySQL Workbench나 MySQL을 지원하는 다른 IDE를 사용하여 MySQL 컨테
 
 연결이 성공하면 IDE의 그래픽 인터페이스를 사용하여 데이터베이스를 관리하고, SQL 쿼리를 실행하며, 데이터를 더 쉽게 조작할 수 있습니다.
 
-DB 및 사용자 생성 완료 후 'init-database' 폴더에 들어 있는 5개의 sql 파일을 실행하셔여야 합니다.
-- `query.sql`
-- `menu.sql`
-- `query_batch.sql`
-- `job_scheduler.sql`
-- `common_export.sql`
+DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 폴더에 있는 `query.sql`, `menu.sql`, `query_batch.sql`, `job_scheduler.sql`, `common_export.sql`) 을 실행하셔여야 합니다.
+
+먼저, query.sql 파일의 스크립 명령을 실행하여 테이블을 생성합니다.
+
+다음은 menu.sql 파일의 스크립 명령을 실행하여 매뉴 구성을 위한 샘플 데이터를 추가합니다.
+
+다음은 query_batch.sql 파일의 스크립 명령을 실행하여 매뉴 구성을 위한 샘플 데이터를 추가합니다.
+
+다음은 job_scheduler.sql 파일의 스크립 명령을 실행하여 매뉴 구성을 위한 샘플 데이터를 추가합니다.
+
+다음은 common_export.sql 파일의 스크립 명령을 실행하여 매뉴 구성을 위한 샘플 데이터를 추가합니다.
 
 5. 프로젝트 빌드:
 
@@ -186,9 +191,9 @@ DB 및 사용자 생성 완료 후 'init-database' 폴더에 들어 있는 5개�
 
 ## 관련 저장소
 
-- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common)
-- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account)
-- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway)
+- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API 관리 / 메뉴관리 / 코드관리 / 파일관리 / 기타
+- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account) 인증 / 인가 / 계정관리 / 이력관리
+- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API Gateway
 
 ## 추가 리소스
 
