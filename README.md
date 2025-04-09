@@ -177,11 +177,11 @@ DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 �
 
 프로젝트는 `init-database` 폴더에 초기 설정을 위한 SQL 스크립트를 포함하고 있습니다:
 
-- `query.sql` 데이터베이스 덤프
-- `menu.sql` 메뉴 관련 데이터
-- `query_batch.sql` Job Scheduler 관련 데이터
-- `job_scheduler.sql` Table Job Scheduler 관련
-- `common_export.sql` Table 공통
+- `query.sql` 기본적인 테이블 생성
+- `menu.sql` 매뉴 구성을 위한 샘플 데이터를 추가
+- `query_batch.sql` batch job 관련 테이블 생성
+- `job_scheduler.sql` 스케줄 관련 테이블 생성
+- `common_export.sql` 부서/사원 정보 테이블 생성
 
 논리 ERD
 ![logic-erd.png](docs/imgs/logic-erd.png)

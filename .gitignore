@@ -6,6 +6,21 @@ build/
 !**/src/test/**/build/
 .DS_Store
 
+# File log & trace
+com-batch/logs
+com-batch/logs/*
+logs
+logs/*
+*.log
+*.trc
+/apilog/*
+/apilog/**/*.log
+/apilog/**/*.log.*
+
+/sqltrace/*
+/sqltrace/**/*.trc
+/sqltrace/**/*.trc.*
+
 ### STS ###
 .apt_generated
 .classpath
