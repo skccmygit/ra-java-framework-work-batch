@@ -40,7 +40,7 @@ cd ra-java-framework-work-batch
 2. Start the required dependencies using Docker Compose:
 
 ```bash
-# start services: zookeeper, kafka, kafka-ui, redis, mysql
+# start services: zookeeper, kafka, mysql
 docker-compose -f docker-compose.yml up -d
 ```
 

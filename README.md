@@ -41,7 +41,7 @@ cd ra-java-framework-work-batch
 2. Docker Compose를 사용하여 필요한 의존성 서비스 시작:
 
 ```bash
-# 서비스 시작: zookeeper, kafka, kafka-ui, redis, mysql
+# 서비스 시작: zookeeper, kafka, mysql
 docker-compose -f docker-compose.yml up -d
 ```
 
