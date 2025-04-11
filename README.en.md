@@ -189,7 +189,6 @@ Physic ERD
 ## Related Repositories
 
 - [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API Management / Menu Management / Code Management / File Management / etc.
-- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account) Authentication / Authorization / Account Management / History Management
 - [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API Gateway
 
 ## Additional Resources

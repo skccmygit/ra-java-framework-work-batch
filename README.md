@@ -192,7 +192,6 @@ DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 �
 ## 관련 저장소
 
 - [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API 관리 / 메뉴관리 / 코드관리 / 파일관리 / 기타
-- [ra-java-framework-account](https://github.com/skccmygit/ra-java-framework-account) 인증 / 인가 / 계정관리 / 이력관리
 - [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API Gateway
 
 ## 추가 리소스
