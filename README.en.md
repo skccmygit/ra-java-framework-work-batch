@@ -120,11 +120,14 @@ Then, run the script command in the `common_export.sql`
 ```
 
 > [!NOTE]
->
+> 
 > In case you get error `./gradlew: Permission denied` you should try to run one of these command  
->    -``sudo chmod +x ./gradlew``
 >
+>    -``sudo chmod +x ./gradlew``
+>    
 >    -``git update-index --chmod=+x gradlew``
+> 
+> Then retry from step 2 above.
 
 ## Running the Application
 

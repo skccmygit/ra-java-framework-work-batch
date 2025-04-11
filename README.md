@@ -111,9 +111,13 @@ MySQL Workbench나 다른 IDE 툴을 이용해 MySQL 컨테이너에 접속할 �
 
 > [!NOTE]
 >
-> 만약 `./gradlew: Permission denied` 오류가 발생하면 다음 명령어를 시도하세요.  
->    - ``sudo chmod +x ./gradlew``  
->    - ``git update-index --chmod=+x gradlew``
+> 만약 `./gradlew: Permission denied` 오류가 발생한다면, 아래 명령어 중 하나를 실행한 뒤
+>
+>    -``sudo chmod +x ./gradlew``
+>    
+>    -``git update-index --chmod=+x gradlew``
+>
+> 다시 2단계(프로젝트 빌드)를 진행해 보세요.
 
 ## 애플리케이션 실행
 
