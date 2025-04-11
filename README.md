@@ -1,70 +1,67 @@
-# SKCC KMS AI - RA-JAVA-FRAMEWORK-WORK-BATCH
+# RA-JAVA-FRAMEWORK-WORK-BATCH
 
 # 시작하기 가이드
 ## 소개
 
-[RA-JAVA-FRAMEWORK-WORK-BATCH]에 오신 것을 환영합니다!
-이 프로젝트 문서는 프로젝트 설정을 안내하여 빠르게 시작할 수 있도록 도와드립니다. 프로젝트에 기여하거나 사용하시는 분들에게 이 가이드가 도움이 될 것입니다.
-이 프로젝트는 다음과 같은 Job Scheduler 및 배치를 수행합니다.
-- 시스템을 필수로 사용해야 하는 사원을 위해 부서 및 직책을 기준으로 사원계정을 자동 생성
-- 사용자 기본권한 자동 매핑 
-- 사용자 기본권한에 따른 메뉴, 버튼 접근 권한 부여 
-- 퇴직자의 계정을 삭제 
-- 사용자가 비밀번호를 정기적으로 변경하는 것을 리마인드
--  ...
+이 프로젝트는 다음과 같은 작업 스케줄링 및 배치 작업을 수행합니다
+- 부서와 직무에 따라 시스템 사용이 필요한 구성원의 계정을 자동 생성
+- 사용자 기본 권한 자동 매핑
+- 사용자 기본 권한에 따른 메뉴 및 버튼 접근 권한 부여
+- 퇴사한 직원들의 계정 삭제
+- 주기적으로 비밀번호 변경을 알림
 
 
-## 사전 요구사항
+## 사전 준비 사항
 
 - JDK 17
 - Docker 및 Docker Compose
-- Gradle 8.12.1 (또는 포함된 Gradle wrapper 사용)
+- Gradle 8.12.1 (또는 제공된 Gradle Wrapper 사용)
 
 ## 프로젝트 구조
 
-프로젝트는 다음과 같은 모듈들로 구성되어 있습니다:
+이 프로젝트는 다음과 같은 모듈로 구성됩니다:
 
 - `com-batch` - 메인 서비스 구현
 - `job-scheduler` - Job Scheduler 관련 API 포함
-- `account-export` - 공유 DTO 및 인터페이스 포함
+- `account-export` - 공유 DTO와 인터페이스
 - `common-export` - 공통 유틸리티 및 공유 컴포넌트
 
-## 설정 및 설치
+## 설치 및 설정
 
-1. 저장소 클론:
+1. 저장소를 클론합니다:
 
 ```bash
 git clone <repository-url>
 cd ra-java-framework-work-batch
 ```
 
-2. Docker Compose를 사용하여 필요한 의존성 서비스 시작:
+2. 필요한 도구를 Docker Compose로 시작합니다:
 
 ```bash
-# 서비스 시작: zookeeper, kafka, mysql
+# zookeeper, kafka, mysql 서비스 시작
 docker-compose -f docker-compose.yml up -d
 ```
 
 3. 데이터베이스 초기화:
 
 > [!NOTE]
-> 
-> Mysql보다 H2 database를 사용하려고 하시면 docker-compose.yml 파일에서 Mysql 서비스를 주석처리 하셔야 됩니다.
-> 그 다음은 이 스탭을 무시하고 "H2 데이터베이스로 애플리케이션 실행하기"라는 부분으로 진행하시면 됩니다.
+>
+> mysql 대신 H2 데이터베이스를 사용하려면, docker-compose.yml 파일에서 MySQL 서비스를 주석 처리하고, 
+> "Running the Application with H2 Database" 섹션으로 바로 이동하세요.
 
 ![mysql-service.png](docs/imgs/mysql-service.png)
 
 ```bash
-# 모든 컨테이너 목록 확인
+# 실행 중인 컨테이너 목록 확인
   docker ps
 
-# mysql 컨테이너 실행
+# mysql 컨테이너 접속
   docker exec -it mysql-work-batch bash
 
-# mysql 로그인
+# mysql 접속
   mysql -u root -p
 
-# MySQL 비밀번호 (qwer1234) 입력
+# MySql 비밀번호(qwer1234) 입력
 
 # SQL 파일 실행
 # 데이터베이스 생성
@@ -85,34 +82,26 @@ docker-compose -f docker-compose.yml up -d
   FLUSH PRIVILEGES;
 ```
 
-4. IDE로 연결
+4. IDE로 연결하기
 
-MySQL Workbench나 MySQL을 지원하는 다른 IDE를 사용하여 MySQL 컨테이너에 연결할 수 있습니다.
-설정 단계는 다음과 같습니다:
+MySQL Workbench나 다른 IDE 툴을 이용해 MySQL 컨테이너에 접속할 수 있습니다.  
+다음 정보를 이용해 새 연결을 설정하세요:
 
-- MySQL Workbench 또는 사용하고자 하는 IDE를 엽니다.
-- 다음 정보로 새 연결을 설정합니다:
-    - **호스트명**: 127.0.0.1 (localhost)
-    - **포트**: 3307
-    - **사용자명**: com_dev
-    - **비밀번호**: qwer1234!
+- **Hostname**: 127.0.0.1 (localhost)
+- **Port**: 3307
+- **Username**: com_dev
+- **Password**: qwer1234!
 
-- **연결 테스트**: MySQL 서버에 접근할 수 있는지 연결을 확인합니다.
-  필요한 경우 'allowPublicKeyRetrieval=true'를 설정해야 할 수 있습니다.
+- 연결 테스트: MySQL 서버에 제대로 접속되는지 확인하세요.  
+  필요하다면 'allowPublicKeyRetrieval=true'를 설정해야 할 수도 있습니다.
 
-연결이 성공하면 IDE의 그래픽 인터페이스를 사용하여 데이터베이스를 관리하고, SQL 쿼리를 실행하며, 데이터를 더 쉽게 조작할 수 있습니다.
+스키마와 사용자 생성을 마친 후에는 5개의 SQL 파일(`query.sql`, `menu.sql`, `query_batch.sql`, `job_scheduler.sql`, `common_export.sql`)을 순서대로 실행하세요.
 
-DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 폴더에 있는 `query.sql`, `menu.sql`, `query_batch.sql`, `job_scheduler.sql`, `common_export.sql`) 을 실행하셔여야 합니다.
-
-먼저, query.sql 파일의 스크립 명령을 실행하여 테이블을 생성합니다.
-
-다음은 menu.sql 파일의 스크립 명령을 실행하여 매뉴 구성을 위한 샘플 데이터를 추가합니다.
-
-다음은 query_batch.sql 파일의 스크립 명령을 실행하여 테이블을 생성합니다.
-
-다음은 job_scheduler.sql 파일의 스크립 명령을 실행하여 테이블을 생성합니다.
-
-다음은 common_export.sql 파일의 스크립 명령을 실행하여 테이블을 생성합니다.
+1) `query.sql` 파일로 테이블 생성  
+2) `menu.sql` 파일로 메뉴 구성 샘플 데이터 추가  
+3) `query_batch.sql` 실행  
+4) `job_scheduler.sql` 실행  
+5) `common_export.sql` 실행
 
 5. 프로젝트 빌드:
 
@@ -122,11 +111,9 @@ DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 �
 
 > [!NOTE]
 >
-> `./gradlew: Permission denied` 오류가 발생할 경우 다음 명령들 중에 하나를 실행해 보시면 됩니다.
->
->  -``sudo chmod +x ./gradlew``
->
->  -``git update-index --chmod=+x gradlew``
+> 만약 `./gradlew: Permission denied` 오류가 발생하면 다음 명령어를 시도하세요.  
+>    - ``sudo chmod +x ./gradlew``  
+>    - ``git update-index --chmod=+x gradlew``
 
 ## 애플리케이션 실행
 
@@ -138,16 +125,14 @@ DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 �
 
 > [!NOTE]
 >
-> IntelliJ, Eclipse 등과 같은 IDE로 프로젝트를 실행할 수도 있습니다.
-> 해당 프로젝트 시작 시 오류가 발생할 경우는 프로젝트 구성을 확인해야 합니다.
-> - JDK 버전
-> - Gradle 구성
-> - 프로시 차단
-> - '.gradle' 폴더를 프로젝트에서 제거하여 2번 스탭 (프로젝트 빌드)로 돌아가서 gradle를 다시 빌드하면 됩니다.
+> IntelliJ, Eclipse 등 IDE에서 프로젝트를 실행해도 됩니다.  
+> 실행 과정에서 오류가 발생하면 다음 항목을 확인하세요:  
+> - JDK 버전  
+> - Gradle 설정  
+> - 프록시 설정  
+> - 프로젝트 내부의 `.gradle` 폴더 삭제 후 빌드 재시도
 
-2. 메인 서비스는 `http://localhost:8080/actuator/health` 에서 확인할 수 있습니다.
-
-## H2 데이터베이스로 애플리케이션 실행하기
+## H2 데이터베이스로 애플리케이션 실행
 
 1. 서비스 시작:
 
@@ -155,33 +140,32 @@ DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 �
 ./gradlew :com-batch:bootRun -Pprofile=test
 ```
 
-2. 메인 서비스는 http://localhost:8080/actuator/health에서 사용할 수 있습니다.
- 
-3. H2 콘솔 http://localhost:8080/h2-console
-- H2 콘솔 로그인 설정:
+2. 메인 서비스는 `http://localhost:8080/actuator/health` 에서 사용 가능합니다.  
+3. H2 콘솔 `http://localhost:8080/h2-console`  
+- H2 콘솔 설정 예시:
     - **Saved Settings**: Generic H2 (Embedded)
     - **Setting Name**: Generic H2 (Embedded)
     - **Driver Class**: org.h2.Driver
     - **JDBC URL**: jdbc:h2:mem:quartz
     - **User Name**: sa
-    - **Password**:
+    - **Password**: (비워둠)
 
 ![h2db.png](docs/imgs/h2db.png)
 
 ## 개발
 
-- `./gradlew build`를 사용하여 모든 모듈 빌드
-- `./gradlew bootRun`을 사용하여 서비스를 로컬에서 실행
+- `./gradlew build` 명령어로 모든 모듈 빌드
+- `./gradlew bootRun` 명령어로 로컬에서 서비스 실행
 
 ## 데이터베이스 설정
 
-프로젝트는 `init-database` 폴더에 초기 설정을 위한 SQL 스크립트를 포함하고 있습니다:
+`init-database` 폴더에 초기 설정용 SQL 스크립트가 포함되어 있습니다.
 
-- `query.sql` 기본적인 테이블 생성
-- `menu.sql` 매뉴 구성을 위한 샘플 데이터를 추가
-- `query_batch.sql` batch job 관련 테이블 생성
-- `job_scheduler.sql` 스케줄 관련 테이블 생성
-- `common_export.sql` 부서/사원 정보 테이블 생성
+- `query.sql` 데이터베이스 덤프
+- `menu.sql` 메뉴 관련 데이터
+- `query_batch.sql` 잡 스케줄러 관련 데이터
+- `job_scheduler.sql` 잡 스케줄러 관련 테이블
+- `common_export.sql` 공통 테이블
 
 논리 ERD
 ![logic-erd.png](docs/imgs/logic-erd.png)
@@ -191,18 +175,18 @@ DB 및 사용자 생성 완료 후 5개의 sql 파일 (`init-database` 같은 �
 
 ## 관련 저장소
 
-- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API 관리 / 메뉴관리 / 코드관리 / 파일관리 / 인증 / 인가 / 계정관리 / 이력관리
-- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API Gateway
+- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API 관리 / 메뉴 관리 / 코드 관리 / 파일 관리 / 기타
+- [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API 게이트웨이
 
-## 추가 리소스
+## 추가 자료
 
-- 자세한 정보는 README.md 파일을 확인하세요
-- 특정 세부사항은 개별 모듈 문서를 참조하세요
-- 인프라 설정은 docker-compose 파일을 참조하세요
+- 더 자세한 내용은 README.md 파일을 참고하세요.
+- 각 모듈의 문서를 확인하여 세부 사항을 확인하세요.
+- 인프라 설정은 docker-compose 파일을 참고하세요.
 
 ## 문제 해결
 
-- 데이터베이스 연결 문제가 발생하면 데이터베이스 컨테이너가 실행 중인지 확인하세요
-- `logs` 폴더에서 자세한 오류 메시지를 확인하세요
+- DB 연결 문제가 발생하면, 데이터베이스 컨테이너가 정상 작동 중인지 확인하세요.
+- `logs` 폴더 내 로그 파일을 확인하여 자세한 에러 메시지를 확인하세요.
 
 ![logs.png](docs/imgs/log.png)

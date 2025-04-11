@@ -1,10 +1,8 @@
-# SKCC KMS AI - RA-JAVA-FRAMEWORK-WORK-BATCH
+# RA-JAVA-FRAMEWORK-WORK-BATCH
 
 # Getting Started Guide
 ## Introduction
 
-Welcome to [RA-JAVA-FRAMEWORK-WORK-BATCH]!
-This project document will guide you through setting up the project, so you can get started quickly. Whether you're contributing or just using the project, this guide will help you get up and running.
 This project performs the following job scheduling and batch operations:
 - Automatically creates accounts for permanent employees who are required to use the system, based on their department and job title.
 - Automatically maps user default permissions
@@ -188,7 +186,7 @@ Physic ERD
 
 ## Related Repositories
 
-- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API Management / Menu Management / Code Management / File Management / Authentication / Authorization / Account Management / History Management
+- [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API Management / Menu Management / Code Management / File Management / etc.
 - [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API Gateway
 
 ## Additional Resources
