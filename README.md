@@ -182,6 +182,24 @@ MySQL Workbench나 다른 IDE 툴을 이용해 MySQL 컨테이너에 접속할 �
 - [ra-java-framework-common](https://github.com/skccmygit/ra-java-framework-common) API 관리 / 메뉴 관리 / 코드 관리 / 파일 관리 / 기타
 - [ra-java-api-gateway](https://github.com/skccmygit/ra-java-api-gateway) API 게이트웨이
 
+## erd.json 파일 사용 안내
+1. 파일 위치
+```
+    docs/
+        ├── db/
+        │   └── schema_*.erd.json
+```
+
+2. `ERD Editor` 확장 기능 설치
+- VS Code에서:
+  - 왼쪽 사이드바의 **Extensions** 아이콘 클릭
+  - “ERD Editor” 검색
+  - **Install** 버튼 클릭
+
+3. `schema_*.erd.json` 파일 열기
+- VS Code 탐색기에서 `schema_*.erd.json`을 클릭 후, ERD Editor 확장 기능이 다이어그램을 렌더링할 때까지 잠시 대기
+- 엔티티와 관계를 시각화하거나 편집 가능
+
 ## 추가 자료
 
 - 각 모듈의 문서를 확인하여 세부 사항을 확인하세요.
