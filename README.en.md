@@ -26,7 +26,7 @@ The project consists of the following modules:
 - `account-export` - Contains shared DTOs and interfaces
 - `common-export` - Common utilities and shared components
 
-## Setup & Installation
+## Installation and Setup
 
 1. Clone the repository:
 
