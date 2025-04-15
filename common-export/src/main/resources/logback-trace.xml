@@ -55,6 +55,8 @@
     <logger name="com.skcc.ra.common.trace.RequestTraceFilter" level="INFO" additivity="false">
         <appender-ref ref="ASYNC"/>
     </logger>
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
 
     <appender name="SQL" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${SQL_LOG_FILE}</file>

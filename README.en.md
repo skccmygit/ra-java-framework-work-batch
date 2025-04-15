@@ -3,13 +3,17 @@
 # Getting Started Guide
 ## Introduction
 
-This project performs the following job scheduling and batch operations:
-- Automatically creates accounts for permanent employees who are required to use the system, based on their department and job title.
-- Automatically maps user default permissions
-- Grants menu and button access rights based on user default permissions
-- Deletes accounts of employees who have retired
-- Reminds users to change their passwords regularly 
-- ...
+This project is a batch processing and job scheduling solution written in Java (Spring Boot). Based on our analysis of the codebase, it automates account management, schedules and runs jobs, and supports data-handling tasks across multiple modules. It can run on MySQL or H2 databases, and uses Docker Compose for local setup and Gradle for building.
+
+Key features identified:
+- Account creation and permission assignment
+- Automated batch tasks with Spring Boot Batch
+- Job scheduling using Quartz
+- Shared DTOs and common utilities for consistent data handling
+- Configurable environment settings via YAML and database scripts
+- Containerization support with Docker
+- H2 in-memory database option for development or testing
+- Integrations with external modules like job-scheduler, account-export, and common-export
 
 ## Prerequisites
 
@@ -209,6 +213,54 @@ Physic ERD
 3. Open `schema_*.erd.json` in the ERD Editor
 - In VS Code’s Explorer, click on `schema_*.erd.json` then wait a moment for this extension rendering schema diagram.
 - Visualize or edit your diagram. The tool should display entities and relationships.
+
+## Instructions Test API
+> [!NOTE]
+> The project includes sample data for testing.
+
+### Test API - Job Scheduler
+
+- Save Job API
+```
+curl --location 'localhost:8080/job-scheduler/saveJob' \
+--header 'Content-Type: application/json' \
+--data '{
+    "jobId": 1,
+    "jobName": "Sample Job",
+    "jobGroup": "DEFAULT_GROUP",
+    "jobInfoStatus": "STARTED",
+    "jobClass": "com.skcc.ra.scheduler.job.MyBatchJob",
+    "cronExpression": "0 0/1 * * * ?",
+    "description": "Sample job description",
+    "startTime": "2025-04-15 09:59:00",
+    "repeatInterval": 30000,
+    "repeatCount": 1,
+    "cronJob": true,
+    "lastModifiedBy": "adminUser",
+    "lastModifiedAt": "2025-04-15 10:00:00",
+    "jobParameters": [
+        {
+            "id": 101,
+            "paramKey": "paramKey",
+            "paramValue": "paramValue"
+        }
+    ]
+}'
+```
+Result for request Save Job API
+```
+Status: 200 OK
+{
+    "valid": true,
+    "message": null,
+    "data": null
+}
+```
+
+- Get All Jobs API
+```
+localhost:8080/job-scheduler/getAllJobs
+```
 
 ## Additional Resources
 
