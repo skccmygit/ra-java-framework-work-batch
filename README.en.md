@@ -1,9 +1,9 @@
-# RA-JAVA-FRAMEWORK-WORK-BATCH
+# System Management - API Logs/Account Permissions Batch
 
 # Getting Started Guide
 ## Introduction
 
-This project is a batch processing and job scheduling solution written in Java (Spring Boot). Based on our analysis of the codebase, it automates account management, schedules and runs jobs, and supports data-handling tasks across multiple modules. It can run on MySQL or H2 databases, and uses Docker Compose for local setup and Gradle for building.
+This project is a batch module that provides the following features for system management services.
 
 Key features identified:
 - Account creation and permission assignment
