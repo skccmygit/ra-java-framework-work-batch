@@ -263,3 +263,4 @@ localhost:8080/job-scheduler/getAllJobs
 - `logs` 폴더 내 로그 파일을 확인하여 자세한 에러 메시지를 확인하세요.
 
 ![logs.png](docs/imgs/log.png)
+
