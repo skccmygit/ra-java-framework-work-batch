@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "50e9b785-abc8-4ca2-a7d5-383f66f70979",
+		"_postman_id": "bff3b908-6917-4e15-b0a4-9651fcb22d72",
 		"name": "쿼츠스케줄러",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15337992"
 	},
 	"item": [
 		{
@@ -20,15 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/saveJob",
+					"raw": "http://localhost:8080/job-scheduler/saveJob",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"saveJob"
 					]
 				}
@@ -50,15 +50,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/saveJob",
+					"raw": "http://localhost:8080/job-scheduler/saveJob",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"saveJob"
 					]
 				}
@@ -83,15 +82,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/getAllJobs",
+					"raw": "http://localhost:8080/job-scheduler/getAllJobs",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"getAllJobs"
 					]
 				}
@@ -116,15 +114,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/getJobInfo?jobName=WWW&jobGroup=9999",
+					"raw": "http://localhost:8080/job-scheduler/getJobInfo?jobName=WWW&jobGroup=9999",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"getJobInfo"
 					],
 					"query": [
@@ -147,15 +144,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/shutdown?wait=false",
+					"raw": "http://localhost:8080/job-scheduler/shutdown?wait=false",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"shutdown"
 					],
 					"query": [
@@ -174,15 +170,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/start",
+					"raw": "http://localhost:8080/job-scheduler/start",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"start"
 					]
 				}
@@ -195,15 +190,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/metaData",
+					"raw": "http://localhost:8080/job-scheduler/metaData",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"metaData"
 					]
 				}
@@ -225,15 +219,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/startJob",
+					"raw": "http://localhost:8080/job-scheduler/startJob",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"startJob"
 					]
 				}
@@ -255,15 +248,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/pauseJob",
+					"raw": "http://localhost:8080/job-scheduler/pauseJob",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"pauseJob"
 					]
 				}
@@ -285,15 +277,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/resumeJob",
+					"raw": "http://localhost:8080/job-scheduler/resumeJob",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"resumeJob"
 					]
 				}
@@ -315,46 +306,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9091/onm-batch/scheduler/deleteJob",
+					"raw": "http://localhost:8080/job-scheduler/deleteJob",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9091",
+					"port": "8080",
 					"path": [
-						"onm-batch",
-						"scheduler",
+						"job-scheduler",
 						"deleteJob"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Job 실행",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "[\r\n  {\r\n    \"jobParamName\": \"path\",\r\n    \"jobParamType\": \"STRING\",\r\n    \"jobParamValue\": \"src/test/resources/board.trc\"\r\n  },\r\n  {\r\n    \"jobParamName\": \"start\",\r\n    \"jobParamType\": \"DATE\",\r\n    \"jobParamValue\": \"20220105\"\r\n  }\r\n]",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:9091/onm-batch/job/apiTraceJob",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9091",
-					"path": [
-						"onm-batch",
-						"job",
-						"apiTraceJob"
 					]
 				}
 			},
